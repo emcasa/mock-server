@@ -1,5 +1,6 @@
 import path from "path";
 import fs from "fs";
+import faker from "faker";
 import { ApolloServer } from "apollo-server-express";
 import { makeExecutableSchema, addMockFunctionsToSchema } from "graphql-tools";
 
