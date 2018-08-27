@@ -1,0 +1,6 @@
+{
+  "ignore": [".git", "node_modules"],
+  "exec": "babel-node",
+  "watch": ["src/"],
+  "ext": "js,json,graphql"
+}

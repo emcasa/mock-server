@@ -1,0 +1,26 @@
+{
+  "name": "em-casa-mock-server",
+  "version": "1.0.0",
+  "main": "build/index.js",
+  "author": "Gabriela Seabra <gabriela.lima.se@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon src/run.js",
+    "build": "babel -d build src"
+  },
+  "dependencies": {
+    "apollo-server-express": "^2.0.4",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "faker": "^4.1.0",
+    "graphql": "^0.13.2",
+    "graphql-tools": "^3.1.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-rc.4",
+    "@babel/core": "^7.0.0-rc.4",
+    "@babel/node": "^7.0.0-rc.4",
+    "@babel/preset-env": "^7.0.0-rc.4",
+    "nodemon": "^1.18.3"
+  }
+}
