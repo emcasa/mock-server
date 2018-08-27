@@ -1,12 +1,13 @@
 {
   "name": "em-casa-mock-server",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "build/index.js",
   "author": "Gabriela Seabra <gabriela.lima.se@gmail.com>",
   "license": "MIT",
   "scripts": {
     "start": "nodemon src/run.js",
-    "build": "babel -d build src"
+    "build": "babel -d build src",
+    "update-schema": "get-graphql-schema http://localhost:4000/graphql_api > schema.graphql"
   },
   "dependencies": {
     "apollo-server-express": "^2.0.4",
@@ -21,6 +22,7 @@
     "@babel/core": "^7.0.0-rc.4",
     "@babel/node": "^7.0.0-rc.4",
     "@babel/preset-env": "^7.0.0-rc.4",
+    "get-graphql-schema": "^2.1.1",
     "nodemon": "^1.18.3"
   }
 }
