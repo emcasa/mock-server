@@ -37,7 +37,7 @@ export default withSeed(() => ({
     slugify
   ),
   street: faker.address.streetName,
-  street: flow(
+  streetSlug: flow(
     faker.address.streetName,
     slugify
   ),
