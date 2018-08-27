@@ -19,7 +19,7 @@ export async function createSchema() {
   return schema;
 }
 
-export default async function createApolloServer(options) {
+export default async function createApolloServer() {
   const schema = await createSchema();
   return new ApolloServer({
     schema,

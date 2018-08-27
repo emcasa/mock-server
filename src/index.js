@@ -1,1 +1,1 @@
-export { default as createApolloMiddleware } from "./graphql";
+export { default as createApolloServer } from "./graphql";
