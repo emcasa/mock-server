@@ -7,7 +7,7 @@
   "scripts": {
     "start": "nodemon src/run.js",
     "build": "babel -d build src",
-    "update-schema": "cd backend && mix absinthe.schema.json --schema ReWeb.Schema && mv schema.json ../schema.json",
+    "update-schema": "cd backend && mix absinthe.schema.json --schema ReWeb.Schema --pretty && mv schema.json ../schema.json",
     "prepare-backend": "git submodule init && (cd backend && cp -n config/dev.secret-example.exs config/dev.secret.exs && mix deps.get)",
     "prepare": "yarn prepare-backend && yarn build"
   },

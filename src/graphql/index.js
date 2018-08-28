@@ -1,26 +1,20 @@
-import path from "path";
-import fs from "fs";
-import faker from "faker";
 import { ApolloServer } from "apollo-server-express";
-import { makeExecutableSchema, addMockFunctionsToSchema } from "graphql-tools";
+import { buildClientSchema } from "graphql";
+import { addMockFunctionsToSchema } from "graphql-tools";
 
+import * as introspectionResult from "../../schema.json";
 import mocks from "./mocks";
 
-export async function createSchema() {
-  const typeDefs = fs
-    .readFileSync(path.join(__dirname, "../../schema.graphql"))
-    .toString();
+export function createSchema() {
   // Make a GraphQL schema with no resolvers
-  const schema = makeExecutableSchema({
-    typeDefs
-  });
+  const schema = buildClientSchema(introspectionResult.data);
   // Add mocks, modifies schema in place
   addMockFunctionsToSchema({ schema, mocks });
   return schema;
 }
 
 export default async function createApolloServer() {
-  const schema = await createSchema();
+  const schema = createSchema();
   return new ApolloServer({
     schema,
     introspection: true,
