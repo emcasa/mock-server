@@ -1,6 +1,7 @@
 import faker from 'faker'
 import Image from './Image'
 import Address from './Address'
+import User from './User'
 import Listing from './Listing'
 import ListingIndex from './ListingIndex'
 
@@ -9,6 +10,7 @@ export default {
   Address,
   Listing,
   ListingIndex,
+  User,
   ID: () => String(faker.random.number()),
   String: () => '',
   Int: () => faker.random.number(1, 1000),
