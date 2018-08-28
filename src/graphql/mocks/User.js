@@ -1,8 +1,6 @@
-import faker from 'faker'
-
 export default () => ({
-  name: 'Joh Doe',
-  id: () => 300,
+  name: 'John Doe',
+  ID: 300,
   email: 'johndoe@doe.com',
-  phone: '99999999'
+  phone: '88888888'
 })
