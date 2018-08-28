@@ -7,8 +7,9 @@
   "scripts": {
     "start": "nodemon src/run.js",
     "build": "babel -d build src",
-    "update-schema": "get-graphql-schema http://localhost:4000/graphql_api > schema.graphql",
-    "prepare": "yarn build"
+    "update-schema": "cd backend && mix absinthe.schema.json --schema ReWeb.Schema --pretty && mv schema.json ../schema.json",
+    "prepare-backend": "git submodule init && (cd backend && cp -n config/dev.secret-example.exs config/dev.secret.exs && mix deps.get)",
+    "prepare": "yarn prepare-backend && yarn build"
   },
   "dependencies": {
     "apollo-server-express": "^2.0.4",
