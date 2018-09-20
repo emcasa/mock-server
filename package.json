@@ -1,6 +1,6 @@
 {
   "name": "em-casa-mock-server",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "build/index.js",
   "author": "Gabriela Seabra <gabriela.lima.se@gmail.com>",
   "license": "MIT",
