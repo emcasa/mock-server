@@ -29,5 +29,8 @@
     "@babel/preset-env": "^7.0.0-rc.4",
     "get-graphql-schema": "^2.1.1",
     "nodemon": "^1.18.3"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
