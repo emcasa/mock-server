@@ -1,6 +1,6 @@
 {
   "name": "@emcasa/mock-server",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "main": "build/index.js",
   "author": "EmCasa <dev@emcasa.com>",
   "license": "MIT",
