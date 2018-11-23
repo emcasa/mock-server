@@ -1,5 +1,6 @@
 import faker from "faker";
 import { MockList } from "graphql-tools";
+import withSeed from "../helpers/withSeed";
 
 const matterportCode = [
   "QJygux45Kvx",
@@ -15,10 +16,19 @@ const matterportCode = [
   "8FxqPg9yX8w"
 ];
 
-export default () => ({
-  type: () => faker.random.arrayElement(["Casa", "Apartamento", "Cobertura"]),
-  price: () => faker.random.number({ min: 500, max: 3000 }) * 1000,
-  matterportCode: () => faker.random.arrayElement(matterportCode),
-  images: () => new MockList([2, 12]),
-  isActive: true
-});
+export default withSeed(
+  seedValue => ({
+    id: seedValue,
+    description: () => faker.lorem.paragraph(),
+    type: () => faker.random.arrayElement(["Casa", "Apartamento", "Cobertura"]),
+    price: () => faker.random.number({ min: 500, max: 3000 }) * 1000,
+    matterportCode: () => faker.random.arrayElement(matterportCode),
+    images: () => new MockList([2, 12]),
+    area: () => faker.random.number({ min: 50, max: 300 }),
+    rooms: faker.random.number({ min: 1, max: 10 }),
+    bathrooms: faker.random.number({ min: 1, max: 10 }),
+    floor: faker.random.number({ min: 0, max: 10 }),
+    isActive: true
+  }),
+  (_, { id }) => id || faker.random.number({ min: 100, max: 9999 })
+);
