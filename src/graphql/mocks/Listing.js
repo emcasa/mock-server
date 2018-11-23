@@ -28,6 +28,9 @@ export default withSeed(
     rooms: faker.random.number({ min: 1, max: 10 }),
     bathrooms: faker.random.number({ min: 1, max: 10 }),
     floor: faker.random.number({ min: 0, max: 10 }),
+    garageSpots: faker.random.number({ min: 0, max: 10 }),
+    restrooms: faker.random.number({ min: 0, max: 10 }),
+    suites: faker.random.number({ min: 0, max: 10 }),
     isActive: true
   }),
   (_, { id }) => id || faker.random.number({ min: 100, max: 9999 })
