@@ -1,9 +1,7 @@
 import flow from "lodash.flow";
 import faker from "faker/locale/pt_BR";
-import slugify$ from "slugify";
+import slugify from "../helpers/slugify";
 import withSeed from "../helpers/withSeed";
-
-const slugify = str => slugify$(str, { lower: true });
 
 const neighborhood = () =>
   faker.random.arrayElement([
