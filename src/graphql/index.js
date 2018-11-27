@@ -24,7 +24,8 @@ export function createSchema() {
 }
 
 function parseJwt(header) {
-  const [_, token] = header && header.split(" ", 2);
+  if (!header) return undefined;
+  const [_, token] = header.split(" ", 2);
   return token ? decodeJwt(token) : undefined;
 }
 

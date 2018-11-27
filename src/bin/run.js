@@ -3,7 +3,7 @@
 import { promisify } from "util";
 import express from "express";
 
-import createApolloServer from "./graphql";
+import createApolloServer from "../graphql";
 
 const PORT = process.env.PORT || 4000;
 

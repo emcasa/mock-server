@@ -1,11 +1,14 @@
 {
   "name": "@emcasa/mock-server",
   "version": "0.1.0",
-  "main": "lib/index.js",
   "author": "EmCasa <dev@emcasa.com>",
   "license": "MIT",
+  "main": "lib/index.js",
+  "bin": {
+    "emcasa-mock-server": "lib/bin/run.js"
+  },
   "scripts": {
-    "start": "nodemon src/run.js",
+    "start": "nodemon src/bin/run.js",
     "build": "babel -d lib src",
     "update-schema": "cd backend && mix absinthe.schema.json --schema ReWeb.Schema --pretty && mv schema.json ../schema.json",
     "prepare-backend": "git submodule init && (cd backend && cp -n config/dev.secret-example.exs config/dev.secret.exs || mix deps.get)",
