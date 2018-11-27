@@ -2,7 +2,6 @@ import faker from "faker";
 import Image from "./Image";
 import Address from "./Address";
 import User from "./User";
-import Credentials from "./Credentials";
 import Listing from "./Listing";
 import ListingIndex from "./ListingIndex";
 import District from "./District";
@@ -13,7 +12,6 @@ export default {
   Listing,
   ListingIndex,
   User,
-  Credentials,
   District,
   ID: () => String(faker.random.number()),
   String: () => "",
