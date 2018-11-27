@@ -5,6 +5,7 @@ import { addMockFunctionsToSchema, makeExecutableSchema } from "graphql-tools";
 import * as introspectionResult from "../../schema.json";
 import resolvers from "./resolvers";
 import mocks from "./mocks";
+import { decodeJwt } from "./helpers/jwt.js";
 
 export function createSchema() {
   // Make a GraphQL schema with no resolvers
@@ -22,10 +23,18 @@ export function createSchema() {
   return schema;
 }
 
+function parseJwt(header) {
+  const [_, token] = header && header.split(" ", 2);
+  return token ? decodeJwt(token) : undefined;
+}
+
 export default async function createApolloServer() {
   const schema = createSchema();
   return new ApolloServer({
     schema,
+    context: async ({ req }) => ({
+      user: parseJwt(req.get("authorization"))
+    }),
     introspection: true,
     playground: true,
     debug: true
