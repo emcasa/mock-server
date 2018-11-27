@@ -3,9 +3,9 @@ import { buildClientSchema, printSchema } from "graphql";
 import { addMockFunctionsToSchema, makeExecutableSchema } from "graphql-tools";
 
 import * as introspectionResult from "../../schema.json";
+import { decodeJwt } from "../helpers/jwt.js";
 import resolvers from "./resolvers";
 import mocks from "./mocks";
-import { decodeJwt } from "./helpers/jwt.js";
 
 export function createSchema() {
   // Make a GraphQL schema with no resolvers

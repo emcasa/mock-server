@@ -1,4 +1,4 @@
-import { decodeAccessToken, encodeJwt } from "../helpers/jwt";
+import { decodeAccessToken, encodeJwt } from "../../helpers/jwt";
 
 export default {
   accountKitSignIn: (_, { accessToken }) => {

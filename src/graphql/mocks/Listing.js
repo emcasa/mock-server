@@ -1,6 +1,6 @@
 import faker from "faker";
 import { MockList } from "graphql-tools";
-import withSeed from "../helpers/withSeed";
+import withSeed from "../../helpers/withSeed";
 
 const matterportCode = [
   "QJygux45Kvx",

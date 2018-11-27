@@ -1,9 +1,9 @@
 import { Buffer } from "buffer";
 import { createError } from "apollo-errors";
-import User from "../mocks/User";
+import User from "../graphql/mocks/User";
 
 const InvalidLoginTokenError = createError("InvalidLoginTokenError", {
-  message: "The provided token is invalid."
+  message: "The provided token is invalid"
 });
 
 export const encodeToken = name => (user = {}) => {
