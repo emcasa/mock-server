@@ -4,11 +4,373 @@
       "types": [
         {
           "possibleTypes": null,
+          "name": "District",
+          "kind": "OBJECT",
+          "interfaces": [],
+          "inputFields": null,
+          "fields": [
+            {
+              "type": {
+                "ofType": null,
+                "name": "String",
+                "kind": "SCALAR"
+              },
+              "name": "city",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "String",
+                "kind": "SCALAR"
+              },
+              "name": "citySlug",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "String",
+                "kind": "SCALAR"
+              },
+              "name": "description",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "String",
+                "kind": "SCALAR"
+              },
+              "name": "name",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "String",
+                "kind": "SCALAR"
+              },
+              "name": "nameSlug",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "String",
+                "kind": "SCALAR"
+              },
+              "name": "state",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "String",
+                "kind": "SCALAR"
+              },
+              "name": "stateSlug",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            }
+          ],
+          "enumValues": null,
+          "description": null
+        },
+        {
+          "possibleTypes": null,
+          "name": "String",
+          "kind": "SCALAR",
+          "interfaces": null,
+          "inputFields": null,
+          "fields": null,
+          "enumValues": null,
+          "description": "The `String` scalar type represents textual data, represented as UTF-8\ncharacter sequences. The String type is most often used by GraphQL to\nrepresent free-form human-readable text."
+        },
+        {
+          "possibleTypes": null,
+          "name": "ListingInput",
+          "kind": "INPUT_OBJECT",
+          "interfaces": null,
+          "inputFields": [
+            {
+              "type": {
+                "ofType": null,
+                "name": "AddressInput",
+                "kind": "INPUT_OBJECT"
+              },
+              "name": "address",
+              "description": null,
+              "defaultValue": null
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "ID",
+                "kind": "SCALAR"
+              },
+              "name": "addressId",
+              "description": null,
+              "defaultValue": null
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Int",
+                "kind": "SCALAR"
+              },
+              "name": "area",
+              "description": null,
+              "defaultValue": null
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Int",
+                "kind": "SCALAR"
+              },
+              "name": "balconies",
+              "description": null,
+              "defaultValue": null
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Int",
+                "kind": "SCALAR"
+              },
+              "name": "bathrooms",
+              "description": null,
+              "defaultValue": null
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "String",
+                "kind": "SCALAR"
+              },
+              "name": "complement",
+              "description": null,
+              "defaultValue": null
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Int",
+                "kind": "SCALAR"
+              },
+              "name": "dependencies",
+              "description": null,
+              "defaultValue": null
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "String",
+                "kind": "SCALAR"
+              },
+              "name": "description",
+              "description": null,
+              "defaultValue": null
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "String",
+                "kind": "SCALAR"
+              },
+              "name": "floor",
+              "description": null,
+              "defaultValue": null
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Int",
+                "kind": "SCALAR"
+              },
+              "name": "garageSpots",
+              "description": null,
+              "defaultValue": null
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "GarageType",
+                "kind": "ENUM"
+              },
+              "name": "garageType",
+              "description": null,
+              "defaultValue": null
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Boolean",
+                "kind": "SCALAR"
+              },
+              "name": "hasElevator",
+              "description": null,
+              "defaultValue": null
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Boolean",
+                "kind": "SCALAR"
+              },
+              "name": "isExclusive",
+              "description": null,
+              "defaultValue": null
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Boolean",
+                "kind": "SCALAR"
+              },
+              "name": "isRelease",
+              "description": null,
+              "defaultValue": null
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Float",
+                "kind": "SCALAR"
+              },
+              "name": "maintenanceFee",
+              "description": null,
+              "defaultValue": null
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "String",
+                "kind": "SCALAR"
+              },
+              "name": "matterportCode",
+              "description": null,
+              "defaultValue": null
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "String",
+                "kind": "SCALAR"
+              },
+              "name": "phone",
+              "description": null,
+              "defaultValue": null
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Int",
+                "kind": "SCALAR"
+              },
+              "name": "price",
+              "description": null,
+              "defaultValue": null
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Float",
+                "kind": "SCALAR"
+              },
+              "name": "propertyTax",
+              "description": null,
+              "defaultValue": null
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Int",
+                "kind": "SCALAR"
+              },
+              "name": "restrooms",
+              "description": null,
+              "defaultValue": null
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Int",
+                "kind": "SCALAR"
+              },
+              "name": "rooms",
+              "description": null,
+              "defaultValue": null
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Int",
+                "kind": "SCALAR"
+              },
+              "name": "suites",
+              "description": null,
+              "defaultValue": null
+            },
+            {
+              "type": {
+                "ofType": {
+                  "ofType": null,
+                  "name": "String",
+                  "kind": "SCALAR"
+                },
+                "name": null,
+                "kind": "NON_NULL"
+              },
+              "name": "type",
+              "description": null,
+              "defaultValue": null
+            }
+          ],
+          "fields": null,
+          "enumValues": null,
+          "description": null
+        },
+        {
+          "possibleTypes": null,
           "name": "Contact",
           "kind": "OBJECT",
           "interfaces": [],
           "inputFields": null,
           "fields": [
+            {
+              "type": {
+                "ofType": null,
+                "name": "String",
+                "kind": "SCALAR"
+              },
+              "name": "city",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
             {
               "type": {
                 "ofType": null,
@@ -63,7 +425,494 @@
                 "name": "String",
                 "kind": "SCALAR"
               },
+              "name": "neighborhood",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "String",
+                "kind": "SCALAR"
+              },
               "name": "phone",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "String",
+                "kind": "SCALAR"
+              },
+              "name": "state",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            }
+          ],
+          "enumValues": null,
+          "description": null
+        },
+        {
+          "possibleTypes": null,
+          "name": "ImageUpdateInput",
+          "kind": "INPUT_OBJECT",
+          "interfaces": null,
+          "inputFields": [
+            {
+              "type": {
+                "ofType": null,
+                "name": "String",
+                "kind": "SCALAR"
+              },
+              "name": "description",
+              "description": null,
+              "defaultValue": null
+            },
+            {
+              "type": {
+                "ofType": {
+                  "ofType": null,
+                  "name": "ID",
+                  "kind": "SCALAR"
+                },
+                "name": null,
+                "kind": "NON_NULL"
+              },
+              "name": "id",
+              "description": null,
+              "defaultValue": null
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Int",
+                "kind": "SCALAR"
+              },
+              "name": "position",
+              "description": null,
+              "defaultValue": null
+            }
+          ],
+          "fields": null,
+          "enumValues": null,
+          "description": null
+        },
+        {
+          "possibleTypes": null,
+          "name": "OrderType",
+          "kind": "ENUM",
+          "interfaces": null,
+          "inputFields": null,
+          "fields": null,
+          "enumValues": [
+            {
+              "name": "ASC",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null
+            },
+            {
+              "name": "DESC",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null
+            }
+          ],
+          "description": null
+        },
+        {
+          "possibleTypes": null,
+          "name": "NaiveDateTime",
+          "kind": "SCALAR",
+          "interfaces": null,
+          "inputFields": null,
+          "fields": null,
+          "enumValues": null,
+          "description": "The `Naive DateTime` scalar type represents a naive date and time without\ntimezone. The DateTime appears in a JSON response as an ISO8601 formatted\nstring."
+        },
+        {
+          "possibleTypes": null,
+          "name": "Int",
+          "kind": "SCALAR",
+          "interfaces": null,
+          "inputFields": null,
+          "fields": null,
+          "enumValues": null,
+          "description": "The `Int` scalar type represents non-fractional signed whole numeric values.\nInt can represent values between `-(2^53 - 1)` and `2^53 - 1` since it is\nrepresented in JSON as double-precision floating point numbers specified\nby [IEEE 754](http://en.wikipedia.org/wiki/IEEE_floating_point)."
+        },
+        {
+          "possibleTypes": null,
+          "name": "Decimal",
+          "kind": "SCALAR",
+          "interfaces": null,
+          "inputFields": null,
+          "fields": null,
+          "enumValues": null,
+          "description": "The `Decimal` scalar type represents signed double-precision fractional\nvalues parsed by the `Decimal` library.  The Decimal appears in a JSON\nresponse as a string to preserve precision."
+        },
+        {
+          "possibleTypes": null,
+          "name": "NotificationPreferencesInput",
+          "kind": "INPUT_OBJECT",
+          "interfaces": null,
+          "inputFields": [
+            {
+              "type": {
+                "ofType": null,
+                "name": "Boolean",
+                "kind": "SCALAR"
+              },
+              "name": "app",
+              "description": null,
+              "defaultValue": null
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Boolean",
+                "kind": "SCALAR"
+              },
+              "name": "email",
+              "description": null,
+              "defaultValue": null
+            }
+          ],
+          "fields": null,
+          "enumValues": null,
+          "description": null
+        },
+        {
+          "possibleTypes": null,
+          "name": "TourScheduleInput",
+          "kind": "INPUT_OBJECT",
+          "interfaces": null,
+          "inputFields": [
+            {
+              "type": {
+                "ofType": {
+                  "ofType": null,
+                  "name": "ID",
+                  "kind": "SCALAR"
+                },
+                "name": null,
+                "kind": "NON_NULL"
+              },
+              "name": "listingId",
+              "description": null,
+              "defaultValue": null
+            },
+            {
+              "type": {
+                "ofType": {
+                  "ofType": {
+                    "ofType": null,
+                    "name": "DatetimeOptionInput",
+                    "kind": "INPUT_OBJECT"
+                  },
+                  "name": null,
+                  "kind": "LIST"
+                },
+                "name": null,
+                "kind": "NON_NULL"
+              },
+              "name": "options",
+              "description": null,
+              "defaultValue": null
+            },
+            {
+              "type": {
+                "ofType": {
+                  "ofType": null,
+                  "name": "Boolean",
+                  "kind": "SCALAR"
+                },
+                "name": null,
+                "kind": "NON_NULL"
+              },
+              "name": "wantsPictures",
+              "description": null,
+              "defaultValue": null
+            },
+            {
+              "type": {
+                "ofType": {
+                  "ofType": null,
+                  "name": "Boolean",
+                  "kind": "SCALAR"
+                },
+                "name": null,
+                "kind": "NON_NULL"
+              },
+              "name": "wantsTour",
+              "description": null,
+              "defaultValue": null
+            }
+          ],
+          "fields": null,
+          "enumValues": null,
+          "description": null
+        },
+        {
+          "possibleTypes": null,
+          "name": "Dashboard",
+          "kind": "OBJECT",
+          "interfaces": [],
+          "inputFields": null,
+          "fields": [
+            {
+              "type": {
+                "ofType": null,
+                "name": "Int",
+                "kind": "SCALAR"
+              },
+              "name": "activeListingCount",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Int",
+                "kind": "SCALAR"
+              },
+              "name": "areaCount",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Int",
+                "kind": "SCALAR"
+              },
+              "name": "favoriteCount",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Int",
+                "kind": "SCALAR"
+              },
+              "name": "maintenanceFeeCount",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Int",
+                "kind": "SCALAR"
+              },
+              "name": "propertyTaxCount",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Int",
+                "kind": "SCALAR"
+              },
+              "name": "tourCount",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Int",
+                "kind": "SCALAR"
+              },
+              "name": "tourVisualizationCount",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Int",
+                "kind": "SCALAR"
+              },
+              "name": "visualizationCount",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            }
+          ],
+          "enumValues": null,
+          "description": null
+        },
+        {
+          "possibleTypes": null,
+          "name": "DatetimeOptionInput",
+          "kind": "INPUT_OBJECT",
+          "interfaces": null,
+          "inputFields": [
+            {
+              "type": {
+                "ofType": {
+                  "ofType": null,
+                  "name": "NaiveDateTime",
+                  "kind": "SCALAR"
+                },
+                "name": null,
+                "kind": "NON_NULL"
+              },
+              "name": "datetime",
+              "description": null,
+              "defaultValue": null
+            }
+          ],
+          "fields": null,
+          "enumValues": null,
+          "description": null
+        },
+        {
+          "possibleTypes": null,
+          "name": "PriceRequest",
+          "kind": "OBJECT",
+          "interfaces": [],
+          "inputFields": null,
+          "fields": [
+            {
+              "type": {
+                "ofType": null,
+                "name": "Address",
+                "kind": "OBJECT"
+              },
+              "name": "address",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Int",
+                "kind": "SCALAR"
+              },
+              "name": "area",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Int",
+                "kind": "SCALAR"
+              },
+              "name": "bathrooms",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "String",
+                "kind": "SCALAR"
+              },
+              "name": "email",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Int",
+                "kind": "SCALAR"
+              },
+              "name": "garageSpots",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "ID",
+                "kind": "SCALAR"
+              },
+              "name": "id",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Boolean",
+                "kind": "SCALAR"
+              },
+              "name": "isCovered",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "String",
+                "kind": "SCALAR"
+              },
+              "name": "name",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Int",
+                "kind": "SCALAR"
+              },
+              "name": "rooms",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Float",
+                "kind": "SCALAR"
+              },
+              "name": "suggestedPrice",
               "isDeprecated": false,
               "description": null,
               "deprecationReason": null,
@@ -87,17 +936,77 @@
         },
         {
           "possibleTypes": null,
-          "name": "DateTime",
-          "kind": "SCALAR",
-          "interfaces": null,
+          "name": "PriceHistory",
+          "kind": "OBJECT",
+          "interfaces": [],
           "inputFields": null,
-          "fields": null,
+          "fields": [
+            {
+              "type": {
+                "ofType": null,
+                "name": "NaiveDateTime",
+                "kind": "SCALAR"
+              },
+              "name": "insertedAt",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Int",
+                "kind": "SCALAR"
+              },
+              "name": "price",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            }
+          ],
           "enumValues": null,
           "description": null
         },
         {
           "possibleTypes": null,
-          "name": "Channel",
+          "name": "ListingUser",
+          "kind": "OBJECT",
+          "interfaces": [],
+          "inputFields": null,
+          "fields": [
+            {
+              "type": {
+                "ofType": null,
+                "name": "Listing",
+                "kind": "OBJECT"
+              },
+              "name": "listing",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "User",
+                "kind": "OBJECT"
+              },
+              "name": "user",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            }
+          ],
+          "enumValues": null,
+          "description": null
+        },
+        {
+          "possibleTypes": null,
+          "name": "TourAppointment",
           "kind": "OBJECT",
           "interfaces": [],
           "inputFields": null,
@@ -130,46 +1039,13 @@
               "type": {
                 "ofType": {
                   "ofType": null,
-                  "name": "Message",
+                  "name": "DatetimeOption",
                   "kind": "OBJECT"
                 },
                 "name": null,
                 "kind": "LIST"
               },
-              "name": "messages",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": [
-                {
-                  "type": {
-                    "ofType": null,
-                    "name": "Int",
-                    "kind": "SCALAR"
-                  },
-                  "name": "limit",
-                  "description": null,
-                  "defaultValue": null
-                },
-                {
-                  "type": {
-                    "ofType": null,
-                    "name": "Int",
-                    "kind": "SCALAR"
-                  },
-                  "name": "offset",
-                  "description": null,
-                  "defaultValue": null
-                }
-              ]
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "User",
-                "kind": "OBJECT"
-              },
-              "name": "participant1",
+              "name": "options",
               "isDeprecated": false,
               "description": null,
               "deprecationReason": null,
@@ -181,7 +1057,7 @@
                 "name": "User",
                 "kind": "OBJECT"
               },
-              "name": "participant2",
+              "name": "user",
               "isDeprecated": false,
               "description": null,
               "deprecationReason": null,
@@ -190,10 +1066,22 @@
             {
               "type": {
                 "ofType": null,
-                "name": "Int",
+                "name": "Boolean",
                 "kind": "SCALAR"
               },
-              "name": "unreadCount",
+              "name": "wantsPictures",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Boolean",
+                "kind": "SCALAR"
+              },
+              "name": "wantsTour",
               "isDeprecated": false,
               "description": null,
               "deprecationReason": null,
@@ -205,23 +1093,885 @@
         },
         {
           "possibleTypes": null,
-          "name": "Upload",
-          "kind": "SCALAR",
+          "name": "GarageType",
+          "kind": "ENUM",
           "interfaces": null,
           "inputFields": null,
           "fields": null,
-          "enumValues": null,
-          "description": "Represents an uploaded file.\n"
+          "enumValues": [
+            {
+              "name": "CONDOMINIUM",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null
+            },
+            {
+              "name": "CONTRACT",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null
+            }
+          ],
+          "description": null
         },
         {
           "possibleTypes": null,
-          "name": "Float",
+          "name": "Message",
+          "kind": "OBJECT",
+          "interfaces": [],
+          "inputFields": null,
+          "fields": [
+            {
+              "type": {
+                "ofType": null,
+                "name": "ID",
+                "kind": "SCALAR"
+              },
+              "name": "id",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "NaiveDateTime",
+                "kind": "SCALAR"
+              },
+              "name": "insertedAt",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Listing",
+                "kind": "OBJECT"
+              },
+              "name": "listing",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "String",
+                "kind": "SCALAR"
+              },
+              "name": "message",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Boolean",
+                "kind": "SCALAR"
+              },
+              "name": "notified",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Boolean",
+                "kind": "SCALAR"
+              },
+              "name": "read",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "User",
+                "kind": "OBJECT"
+              },
+              "name": "receiver",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "User",
+                "kind": "OBJECT"
+              },
+              "name": "sender",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            }
+          ],
+          "enumValues": null,
+          "description": null
+        },
+        {
+          "possibleTypes": null,
+          "name": "RootSubscriptionType",
+          "kind": "OBJECT",
+          "interfaces": [],
+          "inputFields": null,
+          "fields": [
+            {
+              "type": {
+                "ofType": null,
+                "name": "Contact",
+                "kind": "OBJECT"
+              },
+              "name": "contactRequested",
+              "isDeprecated": false,
+              "description": "Subscribe to email change",
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Interest",
+                "kind": "OBJECT"
+              },
+              "name": "interestCreated",
+              "isDeprecated": false,
+              "description": "Subscribe to email change",
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Listing",
+                "kind": "OBJECT"
+              },
+              "name": "listingActivated",
+              "isDeprecated": false,
+              "description": "Subscribe to listing activation",
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Listing",
+                "kind": "OBJECT"
+              },
+              "name": "listingDeactivated",
+              "isDeprecated": false,
+              "description": "Subscribe to listing deactivation",
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Listing",
+                "kind": "OBJECT"
+              },
+              "name": "listingHighlightedVivareal",
+              "isDeprecated": false,
+              "description": "Subscribe to vivareal listing highlits",
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Listing",
+                "kind": "OBJECT"
+              },
+              "name": "listingHighlightedZap",
+              "isDeprecated": false,
+              "description": "Subscribe to zap listing highlits",
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Listing",
+                "kind": "OBJECT"
+              },
+              "name": "listingInserted",
+              "isDeprecated": false,
+              "description": "Subscribe to listing show",
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Listing",
+                "kind": "OBJECT"
+              },
+              "name": "listingSuperHighlightedZap",
+              "isDeprecated": false,
+              "description": "Subscribe to zap listing super highlits",
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Message",
+                "kind": "OBJECT"
+              },
+              "name": "messageSent",
+              "isDeprecated": false,
+              "description": "Subscribe to your messages",
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Message",
+                "kind": "OBJECT"
+              },
+              "name": "messageSentAdmin",
+              "isDeprecated": false,
+              "description": "Send e-mail notification for new messages",
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Contact",
+                "kind": "OBJECT"
+              },
+              "name": "notificationCoverageAsked",
+              "isDeprecated": false,
+              "description": "Subscribe to price suggestion requests",
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "PriceRequest",
+                "kind": "OBJECT"
+              },
+              "name": "priceSuggestionRequested",
+              "isDeprecated": false,
+              "description": "Subscribe to price suggestion requests",
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "TourAppointment",
+                "kind": "OBJECT"
+              },
+              "name": "tourScheduled",
+              "isDeprecated": false,
+              "description": "Subscribe to tour scheduling",
+              "deprecationReason": null,
+              "args": []
+            }
+          ],
+          "enumValues": null,
+          "description": null
+        },
+        {
+          "possibleTypes": null,
+          "name": "InterestInput",
+          "kind": "INPUT_OBJECT",
+          "interfaces": null,
+          "inputFields": [
+            {
+              "type": {
+                "ofType": null,
+                "name": "String",
+                "kind": "SCALAR"
+              },
+              "name": "email",
+              "description": null,
+              "defaultValue": null
+            },
+            {
+              "type": {
+                "ofType": {
+                  "ofType": null,
+                  "name": "ID",
+                  "kind": "SCALAR"
+                },
+                "name": null,
+                "kind": "NON_NULL"
+              },
+              "name": "interestTypeId",
+              "description": null,
+              "defaultValue": null
+            },
+            {
+              "type": {
+                "ofType": {
+                  "ofType": null,
+                  "name": "ID",
+                  "kind": "SCALAR"
+                },
+                "name": null,
+                "kind": "NON_NULL"
+              },
+              "name": "listingId",
+              "description": null,
+              "defaultValue": null
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "String",
+                "kind": "SCALAR"
+              },
+              "name": "message",
+              "description": null,
+              "defaultValue": null
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "String",
+                "kind": "SCALAR"
+              },
+              "name": "name",
+              "description": null,
+              "defaultValue": null
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "String",
+                "kind": "SCALAR"
+              },
+              "name": "phone",
+              "description": null,
+              "defaultValue": null
+            }
+          ],
+          "fields": null,
+          "enumValues": null,
+          "description": null
+        },
+        {
+          "possibleTypes": null,
+          "name": "DatetimeOption",
+          "kind": "OBJECT",
+          "interfaces": [],
+          "inputFields": null,
+          "fields": [
+            {
+              "type": {
+                "ofType": {
+                  "ofType": null,
+                  "name": "NaiveDateTime",
+                  "kind": "SCALAR"
+                },
+                "name": null,
+                "kind": "NON_NULL"
+              },
+              "name": "datetime",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            }
+          ],
+          "enumValues": null,
+          "description": null
+        },
+        {
+          "possibleTypes": null,
+          "name": "SimulationRequest",
+          "kind": "INPUT_OBJECT",
+          "interfaces": null,
+          "inputFields": [
+            {
+              "type": {
+                "ofType": null,
+                "name": "Boolean",
+                "kind": "SCALAR"
+              },
+              "name": "amortization",
+              "description": null,
+              "defaultValue": null
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Float",
+                "kind": "SCALAR"
+              },
+              "name": "annualInterest",
+              "description": null,
+              "defaultValue": null
+            },
+            {
+              "type": {
+                "ofType": {
+                  "ofType": null,
+                  "name": "Date",
+                  "kind": "SCALAR"
+                },
+                "name": null,
+                "kind": "NON_NULL"
+              },
+              "name": "birthday",
+              "description": null,
+              "defaultValue": null
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Date",
+                "kind": "SCALAR"
+              },
+              "name": "birthdayCoparticipant",
+              "description": null,
+              "defaultValue": null
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Boolean",
+                "kind": "SCALAR"
+              },
+              "name": "calculateTr",
+              "description": null,
+              "defaultValue": null
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Decimal",
+                "kind": "SCALAR"
+              },
+              "name": "evaluationRate",
+              "description": null,
+              "defaultValue": null
+            },
+            {
+              "type": {
+                "ofType": {
+                  "ofType": null,
+                  "name": "Decimal",
+                  "kind": "SCALAR"
+                },
+                "name": null,
+                "kind": "NON_NULL"
+              },
+              "name": "fundableValue",
+              "description": null,
+              "defaultValue": null
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Float",
+                "kind": "SCALAR"
+              },
+              "name": "homeEquityAnnualInterest",
+              "description": null,
+              "defaultValue": null
+            },
+            {
+              "type": {
+                "ofType": {
+                  "ofType": null,
+                  "name": "Boolean",
+                  "kind": "SCALAR"
+                },
+                "name": null,
+                "kind": "NON_NULL"
+              },
+              "name": "includeCoparticipant",
+              "description": null,
+              "defaultValue": null
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "String",
+                "kind": "SCALAR"
+              },
+              "name": "insurer",
+              "description": null,
+              "defaultValue": null
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Decimal",
+                "kind": "SCALAR"
+              },
+              "name": "itbiValue",
+              "description": null,
+              "defaultValue": null
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Decimal",
+                "kind": "SCALAR"
+              },
+              "name": "listingPrice",
+              "description": null,
+              "defaultValue": null
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "String",
+                "kind": "SCALAR"
+              },
+              "name": "listingType",
+              "description": null,
+              "defaultValue": null
+            },
+            {
+              "type": {
+                "ofType": {
+                  "ofType": null,
+                  "name": "String",
+                  "kind": "SCALAR"
+                },
+                "name": null,
+                "kind": "NON_NULL"
+              },
+              "name": "mutuary",
+              "description": null,
+              "defaultValue": null
+            },
+            {
+              "type": {
+                "ofType": {
+                  "ofType": null,
+                  "name": "Decimal",
+                  "kind": "SCALAR"
+                },
+                "name": null,
+                "kind": "NON_NULL"
+              },
+              "name": "netIncome",
+              "description": null,
+              "defaultValue": null
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Decimal",
+                "kind": "SCALAR"
+              },
+              "name": "netIncomeCoparticipant",
+              "description": null,
+              "defaultValue": null
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "String",
+                "kind": "SCALAR"
+              },
+              "name": "productType",
+              "description": null,
+              "defaultValue": null
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Boolean",
+                "kind": "SCALAR"
+              },
+              "name": "sum",
+              "description": null,
+              "defaultValue": null
+            },
+            {
+              "type": {
+                "ofType": {
+                  "ofType": null,
+                  "name": "Int",
+                  "kind": "SCALAR"
+                },
+                "name": null,
+                "kind": "NON_NULL"
+              },
+              "name": "term",
+              "description": null,
+              "defaultValue": null
+            }
+          ],
+          "fields": null,
+          "enumValues": null,
+          "description": null
+        },
+        {
+          "possibleTypes": null,
+          "name": "Simulation",
+          "kind": "OBJECT",
+          "interfaces": [],
+          "inputFields": null,
+          "fields": [
+            {
+              "type": {
+                "ofType": null,
+                "name": "String",
+                "kind": "SCALAR"
+              },
+              "name": "cem",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "String",
+                "kind": "SCALAR"
+              },
+              "name": "cet",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            }
+          ],
+          "enumValues": null,
+          "description": null
+        },
+        {
+          "possibleTypes": null,
+          "name": "ImageInsertInput",
+          "kind": "INPUT_OBJECT",
+          "interfaces": null,
+          "inputFields": [
+            {
+              "type": {
+                "ofType": null,
+                "name": "String",
+                "kind": "SCALAR"
+              },
+              "name": "description",
+              "description": null,
+              "defaultValue": null
+            },
+            {
+              "type": {
+                "ofType": {
+                  "ofType": null,
+                  "name": "String",
+                  "kind": "SCALAR"
+                },
+                "name": null,
+                "kind": "NON_NULL"
+              },
+              "name": "filename",
+              "description": null,
+              "defaultValue": null
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Boolean",
+                "kind": "SCALAR"
+              },
+              "name": "isActive",
+              "description": null,
+              "defaultValue": null
+            },
+            {
+              "type": {
+                "ofType": {
+                  "ofType": null,
+                  "name": "ID",
+                  "kind": "SCALAR"
+                },
+                "name": null,
+                "kind": "NON_NULL"
+              },
+              "name": "listingId",
+              "description": null,
+              "defaultValue": null
+            }
+          ],
+          "fields": null,
+          "enumValues": null,
+          "description": null
+        },
+        {
+          "possibleTypes": null,
+          "name": "ID",
           "kind": "SCALAR",
           "interfaces": null,
           "inputFields": null,
           "fields": null,
           "enumValues": null,
-          "description": "The `Float` scalar type represents signed double-precision fractional\nvalues as specified by\n[IEEE 754](http://en.wikipedia.org/wiki/IEEE_floating_point)."
+          "description": "The `ID` scalar type represents a unique identifier, often used to\nrefetch an object or as key for a cache. The ID type appears in a JSON\nresponse as a String; however, it is not intended to be human-readable.\nWhen expected as an input type, any string (such as `\"4\"`) or integer\n(such as `4`) input value will be accepted as an ID."
+        },
+        {
+          "possibleTypes": null,
+          "name": "Boolean",
+          "kind": "SCALAR",
+          "interfaces": null,
+          "inputFields": null,
+          "fields": null,
+          "enumValues": null,
+          "description": "The `Boolean` scalar type represents `true` or `false`."
+        },
+        {
+          "possibleTypes": null,
+          "name": "Interest",
+          "kind": "OBJECT",
+          "interfaces": [],
+          "inputFields": null,
+          "fields": [
+            {
+              "type": {
+                "ofType": null,
+                "name": "String",
+                "kind": "SCALAR"
+              },
+              "name": "email",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "ID",
+                "kind": "SCALAR"
+              },
+              "name": "id",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "InterestType",
+                "kind": "OBJECT"
+              },
+              "name": "interestType",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Listing",
+                "kind": "OBJECT"
+              },
+              "name": "listing",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "String",
+                "kind": "SCALAR"
+              },
+              "name": "message",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "String",
+                "kind": "SCALAR"
+              },
+              "name": "name",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "String",
+                "kind": "SCALAR"
+              },
+              "name": "phone",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            }
+          ],
+          "enumValues": null,
+          "description": null
+        },
+        {
+          "possibleTypes": null,
+          "name": "Date",
+          "kind": "SCALAR",
+          "interfaces": null,
+          "inputFields": null,
+          "fields": null,
+          "enumValues": null,
+          "description": "The `Date` scalar type represents a date. The Date appears in a JSON\nresponse as an ISO8601 formatted string."
+        },
+        {
+          "possibleTypes": null,
+          "name": "ListingPagination",
+          "kind": "INPUT_OBJECT",
+          "interfaces": null,
+          "inputFields": [
+            {
+              "type": {
+                "ofType": {
+                  "ofType": null,
+                  "name": "ID",
+                  "kind": "SCALAR"
+                },
+                "name": null,
+                "kind": "LIST"
+              },
+              "name": "excludedListingIds",
+              "description": null,
+              "defaultValue": null
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Int",
+                "kind": "SCALAR"
+              },
+              "name": "pageSize",
+              "description": null,
+              "defaultValue": null
+            }
+          ],
+          "fields": null,
+          "enumValues": null,
+          "description": null
         },
         {
           "possibleTypes": null,
@@ -348,290 +2098,22 @@
         },
         {
           "possibleTypes": null,
-          "name": "ID",
-          "kind": "SCALAR",
-          "interfaces": null,
-          "inputFields": null,
-          "fields": null,
-          "enumValues": null,
-          "description": "The `ID` scalar type represents a unique identifier, often used to\nrefetch an object or as key for a cache. The ID type appears in a JSON\nresponse as a String; however, it is not intended to be human-readable.\nWhen expected as an input type, any string (such as `\"4\"`) or integer\n(such as `4`) input value will be accepted as an ID."
-        },
-        {
-          "possibleTypes": null,
-          "name": "Listing",
+          "name": "UserMessages",
           "kind": "OBJECT",
           "interfaces": [],
           "inputFields": null,
           "fields": [
             {
               "type": {
-                "ofType": null,
-                "name": "Int",
-                "kind": "SCALAR"
-              },
-              "name": "dependencies",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "String",
-                "kind": "SCALAR"
-              },
-              "name": "type",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Int",
-                "kind": "SCALAR"
-              },
-              "name": "area",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "ID",
-                "kind": "SCALAR"
-              },
-              "name": "id",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Int",
-                "kind": "SCALAR"
-              },
-              "name": "bathrooms",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Int",
-                "kind": "SCALAR"
-              },
-              "name": "listingFavoriteCount",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Address",
-                "kind": "OBJECT"
-              },
-              "name": "address",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Int",
-                "kind": "SCALAR"
-              },
-              "name": "balconies",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "ListingIndex",
-                "kind": "OBJECT"
-              },
-              "name": "related",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": [
-                {
-                  "type": {
-                    "ofType": {
-                      "ofType": null,
-                      "name": "ListingFilterInput",
-                      "kind": "INPUT_OBJECT"
-                    },
-                    "name": null,
-                    "kind": "NON_NULL"
-                  },
-                  "name": "filters",
-                  "description": null,
-                  "defaultValue": null
-                },
-                {
-                  "type": {
-                    "ofType": {
-                      "ofType": null,
-                      "name": "ListingPagination",
-                      "kind": "INPUT_OBJECT"
-                    },
-                    "name": null,
-                    "kind": "NON_NULL"
-                  },
-                  "name": "pagination",
-                  "description": null,
-                  "defaultValue": null
-                }
-              ]
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "String",
-                "kind": "SCALAR"
-              },
-              "name": "matterportCode",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
                 "ofType": {
                   "ofType": null,
-                  "name": "PriceHistory",
+                  "name": "Message",
                   "kind": "OBJECT"
                 },
                 "name": null,
                 "kind": "LIST"
               },
-              "name": "previousPrices",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Int",
-                "kind": "SCALAR"
-              },
-              "name": "price",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": {
-                  "ofType": null,
-                  "name": "Image",
-                  "kind": "OBJECT"
-                },
-                "name": null,
-                "kind": "LIST"
-              },
-              "name": "images",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": [
-                {
-                  "type": {
-                    "ofType": null,
-                    "name": "Boolean",
-                    "kind": "SCALAR"
-                  },
-                  "name": "isActive",
-                  "description": null,
-                  "defaultValue": null
-                },
-                {
-                  "type": {
-                    "ofType": null,
-                    "name": "Int",
-                    "kind": "SCALAR"
-                  },
-                  "name": "limit",
-                  "description": null,
-                  "defaultValue": null
-                }
-              ]
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "DateTime",
-                "kind": "SCALAR"
-              },
-              "name": "insertedAt",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "String",
-                "kind": "SCALAR"
-              },
-              "name": "floor",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "String",
-                "kind": "SCALAR"
-              },
-              "name": "description",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Int",
-                "kind": "SCALAR"
-              },
-              "name": "restrooms",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Float",
-                "kind": "SCALAR"
-              },
-              "name": "propertyTax",
+              "name": "messages",
               "isDeprecated": false,
               "description": null,
               "deprecationReason": null,
@@ -643,187 +2125,7 @@
                 "name": "User",
                 "kind": "OBJECT"
               },
-              "name": "owner",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "String",
-                "kind": "SCALAR"
-              },
-              "name": "complement",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Int",
-                "kind": "SCALAR"
-              },
-              "name": "tourVisualisationCount",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Float",
-                "kind": "SCALAR"
-              },
-              "name": "suggestedPrice",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Boolean",
-                "kind": "SCALAR"
-              },
-              "name": "isExclusive",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Int",
-                "kind": "SCALAR"
-              },
-              "name": "rooms",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Boolean",
-                "kind": "SCALAR"
-              },
-              "name": "priceRecentlyReduced",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Boolean",
-                "kind": "SCALAR"
-              },
-              "name": "isRelease",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Int",
-                "kind": "SCALAR"
-              },
-              "name": "suites",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Int",
-                "kind": "SCALAR"
-              },
-              "name": "listingVisualisationCount",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Int",
-                "kind": "SCALAR"
-              },
-              "name": "inPersonVisitCount",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Int",
-                "kind": "SCALAR"
-              },
-              "name": "interestCount",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Int",
-                "kind": "SCALAR"
-              },
-              "name": "garageSpots",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Boolean",
-                "kind": "SCALAR"
-              },
-              "name": "isActive",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Boolean",
-                "kind": "SCALAR"
-              },
-              "name": "hasElevator",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Float",
-                "kind": "SCALAR"
-              },
-              "name": "maintenanceFee",
+              "name": "user",
               "isDeprecated": false,
               "description": null,
               "deprecationReason": null,
@@ -839,6 +2141,48 @@
           "kind": "INPUT_OBJECT",
           "interfaces": null,
           "inputFields": [
+            {
+              "type": {
+                "ofType": {
+                  "ofType": null,
+                  "name": "String",
+                  "kind": "SCALAR"
+                },
+                "name": null,
+                "kind": "LIST"
+              },
+              "name": "cities",
+              "description": null,
+              "defaultValue": null
+            },
+            {
+              "type": {
+                "ofType": {
+                  "ofType": null,
+                  "name": "String",
+                  "kind": "SCALAR"
+                },
+                "name": null,
+                "kind": "LIST"
+              },
+              "name": "citiesSlug",
+              "description": null,
+              "defaultValue": null
+            },
+            {
+              "type": {
+                "ofType": {
+                  "ofType": null,
+                  "name": "GarageType",
+                  "kind": "ENUM"
+                },
+                "name": null,
+                "kind": "LIST"
+              },
+              "name": "garageTypes",
+              "description": null,
+              "defaultValue": null
+            },
             {
               "type": {
                 "ofType": null,
@@ -905,6 +2249,16 @@
                 "name": "Int",
                 "kind": "SCALAR"
               },
+              "name": "maxSuites",
+              "description": null,
+              "defaultValue": null
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Int",
+                "kind": "SCALAR"
+              },
               "name": "minArea",
               "description": null,
               "defaultValue": null
@@ -961,6 +2315,16 @@
             },
             {
               "type": {
+                "ofType": null,
+                "name": "Int",
+                "kind": "SCALAR"
+              },
+              "name": "minSuites",
+              "description": null,
+              "defaultValue": null
+            },
+            {
+              "type": {
                 "ofType": {
                   "ofType": null,
                   "name": "String",
@@ -1008,63 +2372,28 @@
         },
         {
           "possibleTypes": null,
-          "name": "User",
+          "name": "Upload",
+          "kind": "SCALAR",
+          "interfaces": null,
+          "inputFields": null,
+          "fields": null,
+          "enumValues": null,
+          "description": "Represents an uploaded file.\n"
+        },
+        {
+          "possibleTypes": null,
+          "name": "Credentials",
           "kind": "OBJECT",
           "interfaces": [],
           "inputFields": null,
           "fields": [
             {
               "type": {
-                "ofType": {
-                  "ofType": null,
-                  "name": "Listing",
-                  "kind": "OBJECT"
-                },
-                "name": null,
-                "kind": "LIST"
-              },
-              "name": "blacklists",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": [
-                {
-                  "type": {
-                    "ofType": {
-                      "ofType": null,
-                      "name": "ListingFilterInput",
-                      "kind": "INPUT_OBJECT"
-                    },
-                    "name": null,
-                    "kind": "NON_NULL"
-                  },
-                  "name": "filters",
-                  "description": null,
-                  "defaultValue": null
-                },
-                {
-                  "type": {
-                    "ofType": {
-                      "ofType": null,
-                      "name": "ListingPagination",
-                      "kind": "INPUT_OBJECT"
-                    },
-                    "name": null,
-                    "kind": "NON_NULL"
-                  },
-                  "name": "pagination",
-                  "description": null,
-                  "defaultValue": null
-                }
-              ]
-            },
-            {
-              "type": {
                 "ofType": null,
                 "name": "String",
                 "kind": "SCALAR"
               },
-              "name": "email",
+              "name": "jwt",
               "isDeprecated": false,
               "description": null,
               "deprecationReason": null,
@@ -1072,49 +2401,27 @@
             },
             {
               "type": {
-                "ofType": {
-                  "ofType": null,
-                  "name": "Listing",
-                  "kind": "OBJECT"
-                },
-                "name": null,
-                "kind": "LIST"
+                "ofType": null,
+                "name": "User",
+                "kind": "OBJECT"
               },
-              "name": "favorites",
+              "name": "user",
               "isDeprecated": false,
               "description": null,
               "deprecationReason": null,
-              "args": [
-                {
-                  "type": {
-                    "ofType": {
-                      "ofType": null,
-                      "name": "ListingFilterInput",
-                      "kind": "INPUT_OBJECT"
-                    },
-                    "name": null,
-                    "kind": "NON_NULL"
-                  },
-                  "name": "filters",
-                  "description": null,
-                  "defaultValue": null
-                },
-                {
-                  "type": {
-                    "ofType": {
-                      "ofType": null,
-                      "name": "ListingPagination",
-                      "kind": "INPUT_OBJECT"
-                    },
-                    "name": null,
-                    "kind": "NON_NULL"
-                  },
-                  "name": "pagination",
-                  "description": null,
-                  "defaultValue": null
-                }
-              ]
-            },
+              "args": []
+            }
+          ],
+          "enumValues": null,
+          "description": null
+        },
+        {
+          "possibleTypes": null,
+          "name": "InterestType",
+          "kind": "OBJECT",
+          "interfaces": [],
+          "inputFields": null,
+          "fields": [
             {
               "type": {
                 "ofType": null,
@@ -1129,92 +2436,11 @@
             },
             {
               "type": {
-                "ofType": {
-                  "ofType": null,
-                  "name": "Listing",
-                  "kind": "OBJECT"
-                },
-                "name": null,
-                "kind": "LIST"
-              },
-              "name": "listings",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": [
-                {
-                  "type": {
-                    "ofType": {
-                      "ofType": null,
-                      "name": "ListingFilterInput",
-                      "kind": "INPUT_OBJECT"
-                    },
-                    "name": null,
-                    "kind": "NON_NULL"
-                  },
-                  "name": "filters",
-                  "description": null,
-                  "defaultValue": null
-                },
-                {
-                  "type": {
-                    "ofType": {
-                      "ofType": null,
-                      "name": "ListingPagination",
-                      "kind": "INPUT_OBJECT"
-                    },
-                    "name": null,
-                    "kind": "NON_NULL"
-                  },
-                  "name": "pagination",
-                  "description": null,
-                  "defaultValue": null
-                }
-              ]
-            },
-            {
-              "type": {
                 "ofType": null,
                 "name": "String",
                 "kind": "SCALAR"
               },
               "name": "name",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "NotificationPreferences",
-                "kind": "OBJECT"
-              },
-              "name": "notificationPreferences",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "String",
-                "kind": "SCALAR"
-              },
-              "name": "phone",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "String",
-                "kind": "SCALAR"
-              },
-              "name": "role",
               "isDeprecated": false,
               "description": null,
               "deprecationReason": null,
@@ -1226,11 +2452,97 @@
         },
         {
           "possibleTypes": null,
+          "name": "OrderBy",
+          "kind": "INPUT_OBJECT",
+          "interfaces": null,
+          "inputFields": [
+            {
+              "type": {
+                "ofType": null,
+                "name": "OrderableField",
+                "kind": "ENUM"
+              },
+              "name": "field",
+              "description": null,
+              "defaultValue": null
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "OrderType",
+                "kind": "ENUM"
+              },
+              "name": "type",
+              "description": null,
+              "defaultValue": null
+            }
+          ],
+          "fields": null,
+          "enumValues": null,
+          "description": null
+        },
+        {
+          "possibleTypes": null,
           "name": "RootQueryType",
           "kind": "OBJECT",
           "interfaces": [],
           "inputFields": null,
           "fields": [
+            {
+              "type": {
+                "ofType": null,
+                "name": "Boolean",
+                "kind": "SCALAR"
+              },
+              "name": "addressIsCovered",
+              "isDeprecated": false,
+              "description": "Get address coverage",
+              "deprecationReason": null,
+              "args": [
+                {
+                  "type": {
+                    "ofType": {
+                      "ofType": null,
+                      "name": "String",
+                      "kind": "SCALAR"
+                    },
+                    "name": null,
+                    "kind": "NON_NULL"
+                  },
+                  "name": "city",
+                  "description": null,
+                  "defaultValue": null
+                },
+                {
+                  "type": {
+                    "ofType": {
+                      "ofType": null,
+                      "name": "String",
+                      "kind": "SCALAR"
+                    },
+                    "name": null,
+                    "kind": "NON_NULL"
+                  },
+                  "name": "neighborhood",
+                  "description": null,
+                  "defaultValue": null
+                },
+                {
+                  "type": {
+                    "ofType": {
+                      "ofType": null,
+                      "name": "String",
+                      "kind": "SCALAR"
+                    },
+                    "name": null,
+                    "kind": "NON_NULL"
+                  },
+                  "name": "state",
+                  "description": null,
+                  "defaultValue": null
+                }
+              ]
+            },
             {
               "type": {
                 "ofType": null,
@@ -1424,6 +2736,54 @@
             },
             {
               "type": {
+                "ofType": {
+                  "ofType": null,
+                  "name": "Listing",
+                  "kind": "OBJECT"
+                },
+                "name": null,
+                "kind": "LIST"
+              },
+              "name": "listingVivarealHighlights",
+              "isDeprecated": false,
+              "description": "Get vivareal highlights",
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": {
+                  "ofType": null,
+                  "name": "Listing",
+                  "kind": "OBJECT"
+                },
+                "name": null,
+                "kind": "LIST"
+              },
+              "name": "listingZapHighlights",
+              "isDeprecated": false,
+              "description": "Get zap highlights",
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": {
+                  "ofType": null,
+                  "name": "Listing",
+                  "kind": "OBJECT"
+                },
+                "name": null,
+                "kind": "LIST"
+              },
+              "name": "listingZapSuperHighlights",
+              "isDeprecated": false,
+              "description": "Get zap super highlights",
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
                 "ofType": null,
                 "name": "ListingIndex",
                 "kind": "OBJECT"
@@ -1565,6 +2925,49 @@
             },
             {
               "type": {
+                "ofType": null,
+                "name": "Simulation",
+                "kind": "OBJECT"
+              },
+              "name": "simulate",
+              "isDeprecated": false,
+              "description": "Request funding simulation",
+              "deprecationReason": null,
+              "args": [
+                {
+                  "type": {
+                    "ofType": {
+                      "ofType": null,
+                      "name": "SimulationRequest",
+                      "kind": "INPUT_OBJECT"
+                    },
+                    "name": null,
+                    "kind": "NON_NULL"
+                  },
+                  "name": "input",
+                  "description": null,
+                  "defaultValue": null
+                }
+              ]
+            },
+            {
+              "type": {
+                "ofType": {
+                  "ofType": null,
+                  "name": "NaiveDateTime",
+                  "kind": "SCALAR"
+                },
+                "name": null,
+                "kind": "LIST"
+              },
+              "name": "tourOptions",
+              "isDeprecated": false,
+              "description": "Get tour scheduling options",
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
                 "ofType": {
                   "ofType": null,
                   "name": "Channel",
@@ -1645,7 +3048,7 @@
         },
         {
           "possibleTypes": null,
-          "name": "Address",
+          "name": "Listing",
           "kind": "OBJECT",
           "interfaces": [],
           "inputFields": null,
@@ -1653,10 +3056,22 @@
             {
               "type": {
                 "ofType": null,
-                "name": "String",
+                "name": "Int",
                 "kind": "SCALAR"
               },
-              "name": "city",
+              "name": "suites",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Address",
+                "kind": "OBJECT"
+              },
+              "name": "address",
               "isDeprecated": false,
               "description": null,
               "deprecationReason": null,
@@ -1668,7 +3083,7 @@
                 "name": "String",
                 "kind": "SCALAR"
               },
-              "name": "citySlug",
+              "name": "complement",
               "isDeprecated": false,
               "description": null,
               "deprecationReason": null,
@@ -1677,34 +3092,10 @@
             {
               "type": {
                 "ofType": null,
-                "name": "ID",
+                "name": "Int",
                 "kind": "SCALAR"
               },
-              "name": "id",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Float",
-                "kind": "SCALAR"
-              },
-              "name": "lat",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Float",
-                "kind": "SCALAR"
-              },
-              "name": "lng",
+              "name": "listingVisualisationCount",
               "isDeprecated": false,
               "description": null,
               "deprecationReason": null,
@@ -1716,7 +3107,55 @@
                 "name": "String",
                 "kind": "SCALAR"
               },
-              "name": "neighborhood",
+              "name": "floor",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Boolean",
+                "kind": "SCALAR"
+              },
+              "name": "isRelease",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Int",
+                "kind": "SCALAR"
+              },
+              "name": "interestCount",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Int",
+                "kind": "SCALAR"
+              },
+              "name": "inPersonVisitCount",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Int",
+                "kind": "SCALAR"
+              },
+              "name": "tourVisualisationCount",
               "isDeprecated": false,
               "description": null,
               "deprecationReason": null,
@@ -1728,7 +3167,7 @@
                 "name": "String",
                 "kind": "SCALAR"
               },
-              "name": "neighborhoodDescription",
+              "name": "type",
               "isDeprecated": false,
               "description": null,
               "deprecationReason": null,
@@ -1737,10 +3176,10 @@
             {
               "type": {
                 "ofType": null,
-                "name": "String",
+                "name": "Int",
                 "kind": "SCALAR"
               },
-              "name": "neighborhoodSlug",
+              "name": "garageSpots",
               "isDeprecated": false,
               "description": null,
               "deprecationReason": null,
@@ -1749,10 +3188,10 @@
             {
               "type": {
                 "ofType": null,
-                "name": "String",
-                "kind": "SCALAR"
+                "name": "User",
+                "kind": "OBJECT"
               },
-              "name": "postalCode",
+              "name": "owner",
               "isDeprecated": false,
               "description": null,
               "deprecationReason": null,
@@ -1761,10 +3200,10 @@
             {
               "type": {
                 "ofType": null,
-                "name": "String",
+                "name": "Int",
                 "kind": "SCALAR"
               },
-              "name": "state",
+              "name": "area",
               "isDeprecated": false,
               "description": null,
               "deprecationReason": null,
@@ -1773,10 +3212,10 @@
             {
               "type": {
                 "ofType": null,
-                "name": "String",
+                "name": "Int",
                 "kind": "SCALAR"
               },
-              "name": "stateSlug",
+              "name": "dependencies",
               "isDeprecated": false,
               "description": null,
               "deprecationReason": null,
@@ -1785,10 +3224,10 @@
             {
               "type": {
                 "ofType": null,
-                "name": "String",
+                "name": "Boolean",
                 "kind": "SCALAR"
               },
-              "name": "street",
+              "name": "priceRecentlyReduced",
               "isDeprecated": false,
               "description": null,
               "deprecationReason": null,
@@ -1797,353 +3236,51 @@
             {
               "type": {
                 "ofType": null,
-                "name": "String",
+                "name": "Int",
                 "kind": "SCALAR"
               },
-              "name": "streetNumber",
+              "name": "bathrooms",
               "isDeprecated": false,
               "description": null,
               "deprecationReason": null,
               "args": []
             },
-            {
-              "type": {
-                "ofType": null,
-                "name": "String",
-                "kind": "SCALAR"
-              },
-              "name": "streetSlug",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            }
-          ],
-          "enumValues": null,
-          "description": null
-        },
-        {
-          "possibleTypes": null,
-          "name": "UserMessages",
-          "kind": "OBJECT",
-          "interfaces": [],
-          "inputFields": null,
-          "fields": [
             {
               "type": {
                 "ofType": {
                   "ofType": null,
-                  "name": "Message",
+                  "name": "Image",
                   "kind": "OBJECT"
                 },
                 "name": null,
                 "kind": "LIST"
               },
-              "name": "messages",
+              "name": "images",
               "isDeprecated": false,
               "description": null,
               "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "User",
-                "kind": "OBJECT"
-              },
-              "name": "user",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            }
-          ],
-          "enumValues": null,
-          "description": null
-        },
-        {
-          "possibleTypes": null,
-          "name": "ImageUpdateInput",
-          "kind": "INPUT_OBJECT",
-          "interfaces": null,
-          "inputFields": [
-            {
-              "type": {
-                "ofType": null,
-                "name": "String",
-                "kind": "SCALAR"
-              },
-              "name": "description",
-              "description": null,
-              "defaultValue": null
-            },
-            {
-              "type": {
-                "ofType": {
-                  "ofType": null,
-                  "name": "ID",
-                  "kind": "SCALAR"
+              "args": [
+                {
+                  "type": {
+                    "ofType": null,
+                    "name": "Boolean",
+                    "kind": "SCALAR"
+                  },
+                  "name": "isActive",
+                  "description": null,
+                  "defaultValue": null
                 },
-                "name": null,
-                "kind": "NON_NULL"
-              },
-              "name": "id",
-              "description": null,
-              "defaultValue": null
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Int",
-                "kind": "SCALAR"
-              },
-              "name": "position",
-              "description": null,
-              "defaultValue": null
-            }
-          ],
-          "fields": null,
-          "enumValues": null,
-          "description": null
-        },
-        {
-          "possibleTypes": null,
-          "name": "Boolean",
-          "kind": "SCALAR",
-          "interfaces": null,
-          "inputFields": null,
-          "fields": null,
-          "enumValues": null,
-          "description": "The `Boolean` scalar type represents `true` or `false`."
-        },
-        {
-          "possibleTypes": null,
-          "name": "ListingFilter",
-          "kind": "OBJECT",
-          "interfaces": [],
-          "inputFields": null,
-          "fields": [
-            {
-              "type": {
-                "ofType": null,
-                "name": "Int",
-                "kind": "SCALAR"
-              },
-              "name": "maxArea",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Int",
-                "kind": "SCALAR"
-              },
-              "name": "maxGarageSpots",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Float",
-                "kind": "SCALAR"
-              },
-              "name": "maxLat",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Float",
-                "kind": "SCALAR"
-              },
-              "name": "maxLng",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Int",
-                "kind": "SCALAR"
-              },
-              "name": "maxPrice",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Int",
-                "kind": "SCALAR"
-              },
-              "name": "maxRooms",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Int",
-                "kind": "SCALAR"
-              },
-              "name": "minArea",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Int",
-                "kind": "SCALAR"
-              },
-              "name": "minGarageSpots",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Float",
-                "kind": "SCALAR"
-              },
-              "name": "minLat",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Float",
-                "kind": "SCALAR"
-              },
-              "name": "minLng",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Int",
-                "kind": "SCALAR"
-              },
-              "name": "minPrice",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Int",
-                "kind": "SCALAR"
-              },
-              "name": "minRooms",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": {
-                  "ofType": null,
-                  "name": "String",
-                  "kind": "SCALAR"
-                },
-                "name": null,
-                "kind": "LIST"
-              },
-              "name": "neighborhoods",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": {
-                  "ofType": null,
-                  "name": "String",
-                  "kind": "SCALAR"
-                },
-                "name": null,
-                "kind": "LIST"
-              },
-              "name": "neighborhoodsSlugs",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": {
-                  "ofType": null,
-                  "name": "String",
-                  "kind": "SCALAR"
-                },
-                "name": null,
-                "kind": "LIST"
-              },
-              "name": "types",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            }
-          ],
-          "enumValues": null,
-          "description": null
-        },
-        {
-          "possibleTypes": null,
-          "name": "String",
-          "kind": "SCALAR",
-          "interfaces": null,
-          "inputFields": null,
-          "fields": null,
-          "enumValues": null,
-          "description": "The `String` scalar type represents textual data, represented as UTF-8\ncharacter sequences. The String type is most often used by GraphQL to\nrepresent free-form human-readable text."
-        },
-        {
-          "possibleTypes": null,
-          "name": "NotificationPreferencesInput",
-          "kind": "INPUT_OBJECT",
-          "interfaces": null,
-          "inputFields": [
-            {
-              "type": {
-                "ofType": null,
-                "name": "Boolean",
-                "kind": "SCALAR"
-              },
-              "name": "app",
-              "description": null,
-              "defaultValue": null
+                {
+                  "type": {
+                    "ofType": null,
+                    "name": "Int",
+                    "kind": "SCALAR"
+                  },
+                  "name": "limit",
+                  "description": null,
+                  "defaultValue": null
+                }
+              ]
             },
             {
               "type": {
@@ -2151,414 +3288,24 @@
                 "name": "Boolean",
                 "kind": "SCALAR"
               },
-              "name": "email",
+              "name": "isActive",
+              "isDeprecated": false,
               "description": null,
-              "defaultValue": null
-            }
-          ],
-          "fields": null,
-          "enumValues": null,
-          "description": null
-        },
-        {
-          "possibleTypes": null,
-          "name": "RootSubscriptionType",
-          "kind": "OBJECT",
-          "interfaces": [],
-          "inputFields": null,
-          "fields": [
-            {
-              "type": {
-                "ofType": null,
-                "name": "Contact",
-                "kind": "OBJECT"
-              },
-              "name": "contactRequested",
-              "isDeprecated": false,
-              "description": "Subscribe to email change",
               "deprecationReason": null,
               "args": []
             },
             {
               "type": {
                 "ofType": null,
-                "name": "Listing",
-                "kind": "OBJECT"
-              },
-              "name": "listingActivated",
-              "isDeprecated": false,
-              "description": "Subscribe to listing activation",
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Listing",
-                "kind": "OBJECT"
-              },
-              "name": "listingDeactivated",
-              "isDeprecated": false,
-              "description": "Subscribe to listing deactivation",
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Listing",
-                "kind": "OBJECT"
-              },
-              "name": "listingInserted",
-              "isDeprecated": false,
-              "description": "Subscribe to listing show",
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Message",
-                "kind": "OBJECT"
-              },
-              "name": "messageSent",
-              "isDeprecated": false,
-              "description": "Subscribe to your messages",
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Message",
-                "kind": "OBJECT"
-              },
-              "name": "messageSentAdmin",
-              "isDeprecated": false,
-              "description": "Send e-mail notification for new messages",
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "PriceRequest",
-                "kind": "OBJECT"
-              },
-              "name": "priceSuggestionRequested",
-              "isDeprecated": false,
-              "description": "Subscribe to price suggestion requests",
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Credentials",
-                "kind": "OBJECT"
-              },
-              "name": "userRegistered",
-              "isDeprecated": false,
-              "description": "Subscribe to user registration",
-              "deprecationReason": null,
-              "args": []
-            }
-          ],
-          "enumValues": null,
-          "description": null
-        },
-        {
-          "possibleTypes": null,
-          "name": "District",
-          "kind": "OBJECT",
-          "interfaces": [],
-          "inputFields": null,
-          "fields": [
-            {
-              "type": {
-                "ofType": null,
-                "name": "String",
+                "name": "Float",
                 "kind": "SCALAR"
               },
-              "name": "city",
+              "name": "suggestedPrice",
               "isDeprecated": false,
               "description": null,
               "deprecationReason": null,
               "args": []
             },
-            {
-              "type": {
-                "ofType": null,
-                "name": "String",
-                "kind": "SCALAR"
-              },
-              "name": "citySlug",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "String",
-                "kind": "SCALAR"
-              },
-              "name": "description",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "String",
-                "kind": "SCALAR"
-              },
-              "name": "name",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "String",
-                "kind": "SCALAR"
-              },
-              "name": "nameSlug",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "String",
-                "kind": "SCALAR"
-              },
-              "name": "state",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "String",
-                "kind": "SCALAR"
-              },
-              "name": "stateSlug",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            }
-          ],
-          "enumValues": null,
-          "description": null
-        },
-        {
-          "possibleTypes": null,
-          "name": "Dashboard",
-          "kind": "OBJECT",
-          "interfaces": [],
-          "inputFields": null,
-          "fields": [
-            {
-              "type": {
-                "ofType": null,
-                "name": "Int",
-                "kind": "SCALAR"
-              },
-              "name": "activeListingCount",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Int",
-                "kind": "SCALAR"
-              },
-              "name": "areaCount",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Int",
-                "kind": "SCALAR"
-              },
-              "name": "favoriteCount",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Int",
-                "kind": "SCALAR"
-              },
-              "name": "maintenanceFeeCount",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Int",
-                "kind": "SCALAR"
-              },
-              "name": "propertyTaxCount",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Int",
-                "kind": "SCALAR"
-              },
-              "name": "tourCount",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Int",
-                "kind": "SCALAR"
-              },
-              "name": "tourVisualizationCount",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Int",
-                "kind": "SCALAR"
-              },
-              "name": "visualizationCount",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            }
-          ],
-          "enumValues": null,
-          "description": null
-        },
-        {
-          "possibleTypes": null,
-          "name": "OrderableField",
-          "kind": "ENUM",
-          "interfaces": null,
-          "inputFields": null,
-          "fields": null,
-          "enumValues": [
-            {
-              "name": "AREA",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null
-            },
-            {
-              "name": "BALCONIES",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null
-            },
-            {
-              "name": "BATHROOMS",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null
-            },
-            {
-              "name": "DEPENDENCIES",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null
-            },
-            {
-              "name": "GARAGE_SPOTS",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null
-            },
-            {
-              "name": "ID",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null
-            },
-            {
-              "name": "MAINTENANCE_FEE",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null
-            },
-            {
-              "name": "PRICE",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null
-            },
-            {
-              "name": "PROPERTY_TAX",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null
-            },
-            {
-              "name": "RESTROOMS",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null
-            },
-            {
-              "name": "ROOMS",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null
-            },
-            {
-              "name": "SUITES",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null
-            }
-          ],
-          "description": null
-        },
-        {
-          "possibleTypes": null,
-          "name": "Message",
-          "kind": "OBJECT",
-          "interfaces": [],
-          "inputFields": null,
-          "fields": [
             {
               "type": {
                 "ofType": null,
@@ -2574,10 +3321,10 @@
             {
               "type": {
                 "ofType": null,
-                "name": "DateTime",
+                "name": "Float",
                 "kind": "SCALAR"
               },
-              "name": "insertedAt",
+              "name": "propertyTax",
               "isDeprecated": false,
               "description": null,
               "deprecationReason": null,
@@ -2586,10 +3333,34 @@
             {
               "type": {
                 "ofType": null,
-                "name": "Listing",
-                "kind": "OBJECT"
+                "name": "Int",
+                "kind": "SCALAR"
               },
-              "name": "listing",
+              "name": "listingFavoriteCount",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Boolean",
+                "kind": "SCALAR"
+              },
+              "name": "isExclusive",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Int",
+                "kind": "SCALAR"
+              },
+              "name": "rooms",
               "isDeprecated": false,
               "description": null,
               "deprecationReason": null,
@@ -2601,7 +3372,7 @@
                 "name": "String",
                 "kind": "SCALAR"
               },
-              "name": "message",
+              "name": "description",
               "isDeprecated": false,
               "description": null,
               "deprecationReason": null,
@@ -2610,100 +3381,103 @@
             {
               "type": {
                 "ofType": null,
-                "name": "Boolean",
-                "kind": "SCALAR"
-              },
-              "name": "notified",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Boolean",
-                "kind": "SCALAR"
-              },
-              "name": "read",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "User",
+                "name": "ListingIndex",
                 "kind": "OBJECT"
               },
-              "name": "receiver",
+              "name": "related",
               "isDeprecated": false,
               "description": null,
               "deprecationReason": null,
-              "args": []
+              "args": [
+                {
+                  "type": {
+                    "ofType": {
+                      "ofType": null,
+                      "name": "ListingFilterInput",
+                      "kind": "INPUT_OBJECT"
+                    },
+                    "name": null,
+                    "kind": "NON_NULL"
+                  },
+                  "name": "filters",
+                  "description": null,
+                  "defaultValue": null
+                },
+                {
+                  "type": {
+                    "ofType": {
+                      "ofType": null,
+                      "name": "ListingPagination",
+                      "kind": "INPUT_OBJECT"
+                    },
+                    "name": null,
+                    "kind": "NON_NULL"
+                  },
+                  "name": "pagination",
+                  "description": null,
+                  "defaultValue": null
+                }
+              ]
             },
             {
               "type": {
                 "ofType": null,
-                "name": "User",
-                "kind": "OBJECT"
-              },
-              "name": "sender",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            }
-          ],
-          "enumValues": null,
-          "description": null
-        },
-        {
-          "possibleTypes": null,
-          "name": "OrderBy",
-          "kind": "INPUT_OBJECT",
-          "interfaces": null,
-          "inputFields": [
-            {
-              "type": {
-                "ofType": null,
-                "name": "OrderableField",
-                "kind": "ENUM"
-              },
-              "name": "field",
-              "description": null,
-              "defaultValue": null
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "OrderType",
-                "kind": "ENUM"
-              },
-              "name": "type",
-              "description": null,
-              "defaultValue": null
-            }
-          ],
-          "fields": null,
-          "enumValues": null,
-          "description": null
-        },
-        {
-          "possibleTypes": null,
-          "name": "PriceHistory",
-          "kind": "OBJECT",
-          "interfaces": [],
-          "inputFields": null,
-          "fields": [
-            {
-              "type": {
-                "ofType": null,
-                "name": "DateTime",
+                "name": "NaiveDateTime",
                 "kind": "SCALAR"
               },
               "name": "insertedAt",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Int",
+                "kind": "SCALAR"
+              },
+              "name": "balconies",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "GarageType",
+                "kind": "ENUM"
+              },
+              "name": "garageType",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "String",
+                "kind": "SCALAR"
+              },
+              "name": "matterportCode",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": {
+                  "ofType": null,
+                  "name": "PriceHistory",
+                  "kind": "OBJECT"
+                },
+                "name": null,
+                "kind": "LIST"
+              },
+              "name": "previousPrices",
               "isDeprecated": false,
               "description": null,
               "deprecationReason": null,
@@ -2720,25 +3494,14 @@
               "description": null,
               "deprecationReason": null,
               "args": []
-            }
-          ],
-          "enumValues": null,
-          "description": null
-        },
-        {
-          "possibleTypes": null,
-          "name": "ListingUser",
-          "kind": "OBJECT",
-          "interfaces": [],
-          "inputFields": null,
-          "fields": [
+            },
             {
               "type": {
                 "ofType": null,
-                "name": "Listing",
-                "kind": "OBJECT"
+                "name": "Int",
+                "kind": "SCALAR"
               },
-              "name": "listing",
+              "name": "restrooms",
               "isDeprecated": false,
               "description": null,
               "deprecationReason": null,
@@ -2747,10 +3510,93 @@
             {
               "type": {
                 "ofType": null,
-                "name": "User",
-                "kind": "OBJECT"
+                "name": "Float",
+                "kind": "SCALAR"
               },
-              "name": "user",
+              "name": "maintenanceFee",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Boolean",
+                "kind": "SCALAR"
+              },
+              "name": "hasElevator",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            }
+          ],
+          "enumValues": null,
+          "description": null
+        },
+        {
+          "possibleTypes": null,
+          "name": "Image",
+          "kind": "OBJECT",
+          "interfaces": [],
+          "inputFields": null,
+          "fields": [
+            {
+              "type": {
+                "ofType": null,
+                "name": "String",
+                "kind": "SCALAR"
+              },
+              "name": "description",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "String",
+                "kind": "SCALAR"
+              },
+              "name": "filename",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "ID",
+                "kind": "SCALAR"
+              },
+              "name": "id",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Boolean",
+                "kind": "SCALAR"
+              },
+              "name": "isActive",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Int",
+                "kind": "SCALAR"
+              },
+              "name": "position",
               "isDeprecated": false,
               "description": null,
               "deprecationReason": null,
@@ -3063,6 +3909,33 @@
             {
               "type": {
                 "ofType": null,
+                "name": "Interest",
+                "kind": "OBJECT"
+              },
+              "name": "interestCreate",
+              "isDeprecated": false,
+              "description": "Show interest in listing",
+              "deprecationReason": null,
+              "args": [
+                {
+                  "type": {
+                    "ofType": {
+                      "ofType": null,
+                      "name": "InterestInput",
+                      "kind": "INPUT_OBJECT"
+                    },
+                    "name": null,
+                    "kind": "NON_NULL"
+                  },
+                  "name": "input",
+                  "description": null,
+                  "defaultValue": null
+                }
+              ]
+            },
+            {
+              "type": {
+                "ofType": null,
                 "name": "ListingUser",
                 "kind": "OBJECT"
               },
@@ -3082,6 +3955,87 @@
                     "kind": "NON_NULL"
                   },
                   "name": "id",
+                  "description": null,
+                  "defaultValue": null
+                }
+              ]
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Listing",
+                "kind": "OBJECT"
+              },
+              "name": "listingHighlightVivareal",
+              "isDeprecated": false,
+              "description": "Highligh listing on vivareal",
+              "deprecationReason": null,
+              "args": [
+                {
+                  "type": {
+                    "ofType": {
+                      "ofType": null,
+                      "name": "ID",
+                      "kind": "SCALAR"
+                    },
+                    "name": null,
+                    "kind": "NON_NULL"
+                  },
+                  "name": "listingId",
+                  "description": null,
+                  "defaultValue": null
+                }
+              ]
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Listing",
+                "kind": "OBJECT"
+              },
+              "name": "listingHighlightZap",
+              "isDeprecated": false,
+              "description": "Highligh listing on zap",
+              "deprecationReason": null,
+              "args": [
+                {
+                  "type": {
+                    "ofType": {
+                      "ofType": null,
+                      "name": "ID",
+                      "kind": "SCALAR"
+                    },
+                    "name": null,
+                    "kind": "NON_NULL"
+                  },
+                  "name": "listingId",
+                  "description": null,
+                  "defaultValue": null
+                }
+              ]
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Listing",
+                "kind": "OBJECT"
+              },
+              "name": "listingSuperHighlightZap",
+              "isDeprecated": false,
+              "description": "Super highligh listing on zap",
+              "deprecationReason": null,
+              "args": [
+                {
+                  "type": {
+                    "ofType": {
+                      "ofType": null,
+                      "name": "ID",
+                      "kind": "SCALAR"
+                    },
+                    "name": null,
+                    "kind": "NON_NULL"
+                  },
+                  "name": "listingId",
                   "description": null,
                   "defaultValue": null
                 }
@@ -3136,6 +4090,101 @@
                     "kind": "NON_NULL"
                   },
                   "name": "id",
+                  "description": null,
+                  "defaultValue": null
+                }
+              ]
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Contact",
+                "kind": "OBJECT"
+              },
+              "name": "notifyWhenCovered",
+              "isDeprecated": false,
+              "description": "Request notification when covered",
+              "deprecationReason": null,
+              "args": [
+                {
+                  "type": {
+                    "ofType": {
+                      "ofType": null,
+                      "name": "String",
+                      "kind": "SCALAR"
+                    },
+                    "name": null,
+                    "kind": "NON_NULL"
+                  },
+                  "name": "city",
+                  "description": null,
+                  "defaultValue": null
+                },
+                {
+                  "type": {
+                    "ofType": null,
+                    "name": "String",
+                    "kind": "SCALAR"
+                  },
+                  "name": "email",
+                  "description": null,
+                  "defaultValue": null
+                },
+                {
+                  "type": {
+                    "ofType": null,
+                    "name": "String",
+                    "kind": "SCALAR"
+                  },
+                  "name": "message",
+                  "description": null,
+                  "defaultValue": null
+                },
+                {
+                  "type": {
+                    "ofType": null,
+                    "name": "String",
+                    "kind": "SCALAR"
+                  },
+                  "name": "name",
+                  "description": null,
+                  "defaultValue": null
+                },
+                {
+                  "type": {
+                    "ofType": {
+                      "ofType": null,
+                      "name": "String",
+                      "kind": "SCALAR"
+                    },
+                    "name": null,
+                    "kind": "NON_NULL"
+                  },
+                  "name": "neighborhood",
+                  "description": null,
+                  "defaultValue": null
+                },
+                {
+                  "type": {
+                    "ofType": null,
+                    "name": "String",
+                    "kind": "SCALAR"
+                  },
+                  "name": "phone",
+                  "description": null,
+                  "defaultValue": null
+                },
+                {
+                  "type": {
+                    "ofType": {
+                      "ofType": null,
+                      "name": "String",
+                      "kind": "SCALAR"
+                    },
+                    "name": null,
+                    "kind": "NON_NULL"
+                  },
+                  "name": "state",
                   "description": null,
                   "defaultValue": null
                 }
@@ -3249,13 +4298,9 @@
                 },
                 {
                   "type": {
-                    "ofType": {
-                      "ofType": null,
-                      "name": "String",
-                      "kind": "SCALAR"
-                    },
-                    "name": null,
-                    "kind": "NON_NULL"
+                    "ofType": null,
+                    "name": "String",
+                    "kind": "SCALAR"
                   },
                   "name": "email",
                   "description": null,
@@ -3365,6 +4410,33 @@
                     "kind": "NON_NULL"
                   },
                   "name": "receiverId",
+                  "description": null,
+                  "defaultValue": null
+                }
+              ]
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "TourAppointment",
+                "kind": "OBJECT"
+              },
+              "name": "tourSchedule",
+              "isDeprecated": false,
+              "description": "Schedule Tour",
+              "deprecationReason": null,
+              "args": [
+                {
+                  "type": {
+                    "ofType": {
+                      "ofType": null,
+                      "name": "TourScheduleInput",
+                      "kind": "INPUT_OBJECT"
+                    },
+                    "name": null,
+                    "kind": "NON_NULL"
+                  },
+                  "name": "input",
                   "description": null,
                   "defaultValue": null
                 }
@@ -3512,7 +4584,7 @@
               },
               "name": "uploadFactorsCsv",
               "isDeprecated": false,
-              "description": null,
+              "description": "Upload file with price suggestion factors",
               "deprecationReason": null,
               "args": [
                 {
@@ -3537,219 +4609,26 @@
         },
         {
           "possibleTypes": null,
-          "name": "ListingInput",
-          "kind": "INPUT_OBJECT",
-          "interfaces": null,
-          "inputFields": [
+          "name": "ListingFilter",
+          "kind": "OBJECT",
+          "interfaces": [],
+          "inputFields": null,
+          "fields": [
             {
               "type": {
-                "ofType": null,
-                "name": "AddressInput",
-                "kind": "INPUT_OBJECT"
+                "ofType": {
+                  "ofType": null,
+                  "name": "String",
+                  "kind": "SCALAR"
+                },
+                "name": null,
+                "kind": "LIST"
               },
-              "name": "address",
+              "name": "cities",
+              "isDeprecated": false,
               "description": null,
-              "defaultValue": null
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "ID",
-                "kind": "SCALAR"
-              },
-              "name": "addressId",
-              "description": null,
-              "defaultValue": null
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Int",
-                "kind": "SCALAR"
-              },
-              "name": "area",
-              "description": null,
-              "defaultValue": null
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Int",
-                "kind": "SCALAR"
-              },
-              "name": "balconies",
-              "description": null,
-              "defaultValue": null
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Int",
-                "kind": "SCALAR"
-              },
-              "name": "bathrooms",
-              "description": null,
-              "defaultValue": null
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "String",
-                "kind": "SCALAR"
-              },
-              "name": "complement",
-              "description": null,
-              "defaultValue": null
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Int",
-                "kind": "SCALAR"
-              },
-              "name": "dependencies",
-              "description": null,
-              "defaultValue": null
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "String",
-                "kind": "SCALAR"
-              },
-              "name": "description",
-              "description": null,
-              "defaultValue": null
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "String",
-                "kind": "SCALAR"
-              },
-              "name": "floor",
-              "description": null,
-              "defaultValue": null
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Int",
-                "kind": "SCALAR"
-              },
-              "name": "garageSpots",
-              "description": null,
-              "defaultValue": null
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Boolean",
-                "kind": "SCALAR"
-              },
-              "name": "hasElevator",
-              "description": null,
-              "defaultValue": null
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Boolean",
-                "kind": "SCALAR"
-              },
-              "name": "isExclusive",
-              "description": null,
-              "defaultValue": null
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Boolean",
-                "kind": "SCALAR"
-              },
-              "name": "isRelease",
-              "description": null,
-              "defaultValue": null
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Float",
-                "kind": "SCALAR"
-              },
-              "name": "maintenanceFee",
-              "description": null,
-              "defaultValue": null
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "String",
-                "kind": "SCALAR"
-              },
-              "name": "matterportCode",
-              "description": null,
-              "defaultValue": null
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "String",
-                "kind": "SCALAR"
-              },
-              "name": "phone",
-              "description": null,
-              "defaultValue": null
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Int",
-                "kind": "SCALAR"
-              },
-              "name": "price",
-              "description": null,
-              "defaultValue": null
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Float",
-                "kind": "SCALAR"
-              },
-              "name": "propertyTax",
-              "description": null,
-              "defaultValue": null
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Int",
-                "kind": "SCALAR"
-              },
-              "name": "restrooms",
-              "description": null,
-              "defaultValue": null
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Int",
-                "kind": "SCALAR"
-              },
-              "name": "rooms",
-              "description": null,
-              "defaultValue": null
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Int",
-                "kind": "SCALAR"
-              },
-              "name": "suites",
-              "description": null,
-              "defaultValue": null
+              "deprecationReason": null,
+              "args": []
             },
             {
               "type": {
@@ -3759,16 +4638,668 @@
                   "kind": "SCALAR"
                 },
                 "name": null,
-                "kind": "NON_NULL"
+                "kind": "LIST"
               },
-              "name": "type",
+              "name": "citiesSlug",
+              "isDeprecated": false,
               "description": null,
-              "defaultValue": null
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": {
+                  "ofType": null,
+                  "name": "GarageType",
+                  "kind": "ENUM"
+                },
+                "name": null,
+                "kind": "LIST"
+              },
+              "name": "garageTypes",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Int",
+                "kind": "SCALAR"
+              },
+              "name": "maxArea",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Int",
+                "kind": "SCALAR"
+              },
+              "name": "maxGarageSpots",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Float",
+                "kind": "SCALAR"
+              },
+              "name": "maxLat",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Float",
+                "kind": "SCALAR"
+              },
+              "name": "maxLng",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Int",
+                "kind": "SCALAR"
+              },
+              "name": "maxPrice",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Int",
+                "kind": "SCALAR"
+              },
+              "name": "maxRooms",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Int",
+                "kind": "SCALAR"
+              },
+              "name": "maxSuites",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Int",
+                "kind": "SCALAR"
+              },
+              "name": "minArea",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Int",
+                "kind": "SCALAR"
+              },
+              "name": "minGarageSpots",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Float",
+                "kind": "SCALAR"
+              },
+              "name": "minLat",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Float",
+                "kind": "SCALAR"
+              },
+              "name": "minLng",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Int",
+                "kind": "SCALAR"
+              },
+              "name": "minPrice",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Int",
+                "kind": "SCALAR"
+              },
+              "name": "minRooms",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Int",
+                "kind": "SCALAR"
+              },
+              "name": "minSuites",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": {
+                  "ofType": null,
+                  "name": "String",
+                  "kind": "SCALAR"
+                },
+                "name": null,
+                "kind": "LIST"
+              },
+              "name": "neighborhoods",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": {
+                  "ofType": null,
+                  "name": "String",
+                  "kind": "SCALAR"
+                },
+                "name": null,
+                "kind": "LIST"
+              },
+              "name": "neighborhoodsSlugs",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": {
+                  "ofType": null,
+                  "name": "String",
+                  "kind": "SCALAR"
+                },
+                "name": null,
+                "kind": "LIST"
+              },
+              "name": "types",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
             }
           ],
-          "fields": null,
           "enumValues": null,
           "description": null
+        },
+        {
+          "possibleTypes": null,
+          "name": "Channel",
+          "kind": "OBJECT",
+          "interfaces": [],
+          "inputFields": null,
+          "fields": [
+            {
+              "type": {
+                "ofType": null,
+                "name": "ID",
+                "kind": "SCALAR"
+              },
+              "name": "id",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Listing",
+                "kind": "OBJECT"
+              },
+              "name": "listing",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": {
+                  "ofType": null,
+                  "name": "Message",
+                  "kind": "OBJECT"
+                },
+                "name": null,
+                "kind": "LIST"
+              },
+              "name": "messages",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": [
+                {
+                  "type": {
+                    "ofType": null,
+                    "name": "Int",
+                    "kind": "SCALAR"
+                  },
+                  "name": "limit",
+                  "description": null,
+                  "defaultValue": null
+                },
+                {
+                  "type": {
+                    "ofType": null,
+                    "name": "Int",
+                    "kind": "SCALAR"
+                  },
+                  "name": "offset",
+                  "description": null,
+                  "defaultValue": null
+                }
+              ]
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "User",
+                "kind": "OBJECT"
+              },
+              "name": "participant1",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "User",
+                "kind": "OBJECT"
+              },
+              "name": "participant2",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Int",
+                "kind": "SCALAR"
+              },
+              "name": "unreadCount",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            }
+          ],
+          "enumValues": null,
+          "description": null
+        },
+        {
+          "possibleTypes": null,
+          "name": "OrderableField",
+          "kind": "ENUM",
+          "interfaces": null,
+          "inputFields": null,
+          "fields": null,
+          "enumValues": [
+            {
+              "name": "AREA",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null
+            },
+            {
+              "name": "BALCONIES",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null
+            },
+            {
+              "name": "BATHROOMS",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null
+            },
+            {
+              "name": "DEPENDENCIES",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null
+            },
+            {
+              "name": "GARAGE_SPOTS",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null
+            },
+            {
+              "name": "ID",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null
+            },
+            {
+              "name": "MAINTENANCE_FEE",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null
+            },
+            {
+              "name": "PRICE",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null
+            },
+            {
+              "name": "PROPERTY_TAX",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null
+            },
+            {
+              "name": "RESTROOMS",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null
+            },
+            {
+              "name": "ROOMS",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null
+            },
+            {
+              "name": "SUITES",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null
+            }
+          ],
+          "description": null
+        },
+        {
+          "possibleTypes": null,
+          "name": "User",
+          "kind": "OBJECT",
+          "interfaces": [],
+          "inputFields": null,
+          "fields": [
+            {
+              "type": {
+                "ofType": {
+                  "ofType": null,
+                  "name": "Listing",
+                  "kind": "OBJECT"
+                },
+                "name": null,
+                "kind": "LIST"
+              },
+              "name": "blacklists",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": [
+                {
+                  "type": {
+                    "ofType": {
+                      "ofType": null,
+                      "name": "ListingFilterInput",
+                      "kind": "INPUT_OBJECT"
+                    },
+                    "name": null,
+                    "kind": "NON_NULL"
+                  },
+                  "name": "filters",
+                  "description": null,
+                  "defaultValue": null
+                },
+                {
+                  "type": {
+                    "ofType": {
+                      "ofType": null,
+                      "name": "ListingPagination",
+                      "kind": "INPUT_OBJECT"
+                    },
+                    "name": null,
+                    "kind": "NON_NULL"
+                  },
+                  "name": "pagination",
+                  "description": null,
+                  "defaultValue": null
+                }
+              ]
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "String",
+                "kind": "SCALAR"
+              },
+              "name": "email",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": {
+                  "ofType": null,
+                  "name": "Listing",
+                  "kind": "OBJECT"
+                },
+                "name": null,
+                "kind": "LIST"
+              },
+              "name": "favorites",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": [
+                {
+                  "type": {
+                    "ofType": {
+                      "ofType": null,
+                      "name": "ListingFilterInput",
+                      "kind": "INPUT_OBJECT"
+                    },
+                    "name": null,
+                    "kind": "NON_NULL"
+                  },
+                  "name": "filters",
+                  "description": null,
+                  "defaultValue": null
+                },
+                {
+                  "type": {
+                    "ofType": {
+                      "ofType": null,
+                      "name": "ListingPagination",
+                      "kind": "INPUT_OBJECT"
+                    },
+                    "name": null,
+                    "kind": "NON_NULL"
+                  },
+                  "name": "pagination",
+                  "description": null,
+                  "defaultValue": null
+                }
+              ]
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "ID",
+                "kind": "SCALAR"
+              },
+              "name": "id",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": {
+                  "ofType": null,
+                  "name": "Listing",
+                  "kind": "OBJECT"
+                },
+                "name": null,
+                "kind": "LIST"
+              },
+              "name": "listings",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": [
+                {
+                  "type": {
+                    "ofType": {
+                      "ofType": null,
+                      "name": "ListingFilterInput",
+                      "kind": "INPUT_OBJECT"
+                    },
+                    "name": null,
+                    "kind": "NON_NULL"
+                  },
+                  "name": "filters",
+                  "description": null,
+                  "defaultValue": null
+                },
+                {
+                  "type": {
+                    "ofType": {
+                      "ofType": null,
+                      "name": "ListingPagination",
+                      "kind": "INPUT_OBJECT"
+                    },
+                    "name": null,
+                    "kind": "NON_NULL"
+                  },
+                  "name": "pagination",
+                  "description": null,
+                  "defaultValue": null
+                }
+              ]
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "String",
+                "kind": "SCALAR"
+              },
+              "name": "name",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "NotificationPreferences",
+                "kind": "OBJECT"
+              },
+              "name": "notificationPreferences",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "String",
+                "kind": "SCALAR"
+              },
+              "name": "phone",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "String",
+                "kind": "SCALAR"
+              },
+              "name": "role",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            }
+          ],
+          "enumValues": null,
+          "description": null
+        },
+        {
+          "possibleTypes": null,
+          "name": "Float",
+          "kind": "SCALAR",
+          "interfaces": null,
+          "inputFields": null,
+          "fields": null,
+          "enumValues": null,
+          "description": "The `Float` scalar type represents signed double-precision fractional\nvalues as specified by\n[IEEE 754](http://en.wikipedia.org/wiki/IEEE_floating_point)."
         },
         {
           "possibleTypes": null,
@@ -3796,255 +5327,6 @@
                 "kind": "SCALAR"
               },
               "name": "email",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            }
-          ],
-          "enumValues": null,
-          "description": null
-        },
-        {
-          "possibleTypes": null,
-          "name": "InterestType",
-          "kind": "OBJECT",
-          "interfaces": [],
-          "inputFields": null,
-          "fields": [
-            {
-              "type": {
-                "ofType": null,
-                "name": "ID",
-                "kind": "SCALAR"
-              },
-              "name": "id",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "String",
-                "kind": "SCALAR"
-              },
-              "name": "name",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            }
-          ],
-          "enumValues": null,
-          "description": null
-        },
-        {
-          "possibleTypes": null,
-          "name": "PriceRequest",
-          "kind": "OBJECT",
-          "interfaces": [],
-          "inputFields": null,
-          "fields": [
-            {
-              "type": {
-                "ofType": null,
-                "name": "Address",
-                "kind": "OBJECT"
-              },
-              "name": "address",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Int",
-                "kind": "SCALAR"
-              },
-              "name": "area",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Int",
-                "kind": "SCALAR"
-              },
-              "name": "bathrooms",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "String",
-                "kind": "SCALAR"
-              },
-              "name": "email",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Int",
-                "kind": "SCALAR"
-              },
-              "name": "garageSpots",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "ID",
-                "kind": "SCALAR"
-              },
-              "name": "id",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Boolean",
-                "kind": "SCALAR"
-              },
-              "name": "isCovered",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "String",
-                "kind": "SCALAR"
-              },
-              "name": "name",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Int",
-                "kind": "SCALAR"
-              },
-              "name": "rooms",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Float",
-                "kind": "SCALAR"
-              },
-              "name": "suggestedPrice",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "User",
-                "kind": "OBJECT"
-              },
-              "name": "user",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            }
-          ],
-          "enumValues": null,
-          "description": null
-        },
-        {
-          "possibleTypes": null,
-          "name": "Image",
-          "kind": "OBJECT",
-          "interfaces": [],
-          "inputFields": null,
-          "fields": [
-            {
-              "type": {
-                "ofType": null,
-                "name": "String",
-                "kind": "SCALAR"
-              },
-              "name": "description",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "String",
-                "kind": "SCALAR"
-              },
-              "name": "filename",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "ID",
-                "kind": "SCALAR"
-              },
-              "name": "id",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Boolean",
-                "kind": "SCALAR"
-              },
-              "name": "isActive",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Int",
-                "kind": "SCALAR"
-              },
-              "name": "position",
               "isDeprecated": false,
               "description": null,
               "deprecationReason": null,
@@ -4107,33 +5389,46 @@
         },
         {
           "possibleTypes": null,
-          "name": "ImageInsertInput",
-          "kind": "INPUT_OBJECT",
-          "interfaces": null,
-          "inputFields": [
+          "name": "Address",
+          "kind": "OBJECT",
+          "interfaces": [],
+          "inputFields": null,
+          "fields": [
             {
               "type": {
                 "ofType": null,
                 "name": "String",
                 "kind": "SCALAR"
               },
-              "name": "description",
+              "name": "city",
+              "isDeprecated": false,
               "description": null,
-              "defaultValue": null
+              "deprecationReason": null,
+              "args": []
             },
             {
               "type": {
-                "ofType": {
-                  "ofType": null,
-                  "name": "String",
-                  "kind": "SCALAR"
-                },
-                "name": null,
-                "kind": "NON_NULL"
+                "ofType": null,
+                "name": "String",
+                "kind": "SCALAR"
               },
-              "name": "filename",
+              "name": "citySlug",
+              "isDeprecated": false,
               "description": null,
-              "defaultValue": null
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "ID",
+                "kind": "SCALAR"
+              },
+              "name": "id",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
             },
             {
               "type": {
@@ -4141,111 +5436,43 @@
                 "name": "Boolean",
                 "kind": "SCALAR"
               },
-              "name": "isActive",
+              "name": "isCovered",
+              "isDeprecated": false,
               "description": null,
-              "defaultValue": null
-            },
-            {
-              "type": {
-                "ofType": {
-                  "ofType": null,
-                  "name": "ID",
-                  "kind": "SCALAR"
-                },
-                "name": null,
-                "kind": "NON_NULL"
-              },
-              "name": "listingId",
-              "description": null,
-              "defaultValue": null
-            }
-          ],
-          "fields": null,
-          "enumValues": null,
-          "description": null
-        },
-        {
-          "possibleTypes": null,
-          "name": "ListingPagination",
-          "kind": "INPUT_OBJECT",
-          "interfaces": null,
-          "inputFields": [
-            {
-              "type": {
-                "ofType": {
-                  "ofType": null,
-                  "name": "ID",
-                  "kind": "SCALAR"
-                },
-                "name": null,
-                "kind": "LIST"
-              },
-              "name": "excludedListingIds",
-              "description": null,
-              "defaultValue": null
+              "deprecationReason": null,
+              "args": []
             },
             {
               "type": {
                 "ofType": null,
-                "name": "Int",
+                "name": "Float",
                 "kind": "SCALAR"
               },
-              "name": "pageSize",
-              "description": null,
-              "defaultValue": null
-            }
-          ],
-          "fields": null,
-          "enumValues": null,
-          "description": null
-        },
-        {
-          "possibleTypes": null,
-          "name": "OrderType",
-          "kind": "ENUM",
-          "interfaces": null,
-          "inputFields": null,
-          "fields": null,
-          "enumValues": [
-            {
-              "name": "ASC",
+              "name": "lat",
               "isDeprecated": false,
               "description": null,
-              "deprecationReason": null
+              "deprecationReason": null,
+              "args": []
             },
             {
-              "name": "DESC",
+              "type": {
+                "ofType": null,
+                "name": "Float",
+                "kind": "SCALAR"
+              },
+              "name": "lng",
               "isDeprecated": false,
               "description": null,
-              "deprecationReason": null
-            }
-          ],
-          "description": null
-        },
-        {
-          "possibleTypes": null,
-          "name": "Int",
-          "kind": "SCALAR",
-          "interfaces": null,
-          "inputFields": null,
-          "fields": null,
-          "enumValues": null,
-          "description": "The `Int` scalar type represents non-fractional signed whole numeric values.\nInt can represent values between `-(2^53 - 1)` and `2^53 - 1` since it is\nrepresented in JSON as double-precision floating point numbers specified\nby [IEEE 754](http://en.wikipedia.org/wiki/IEEE_floating_point)."
-        },
-        {
-          "possibleTypes": null,
-          "name": "Credentials",
-          "kind": "OBJECT",
-          "interfaces": [],
-          "inputFields": null,
-          "fields": [
+              "deprecationReason": null,
+              "args": []
+            },
             {
               "type": {
                 "ofType": null,
                 "name": "String",
                 "kind": "SCALAR"
               },
-              "name": "jwt",
+              "name": "neighborhood",
               "isDeprecated": false,
               "description": null,
               "deprecationReason": null,
@@ -4254,10 +5481,94 @@
             {
               "type": {
                 "ofType": null,
-                "name": "User",
-                "kind": "OBJECT"
+                "name": "String",
+                "kind": "SCALAR"
               },
-              "name": "user",
+              "name": "neighborhoodDescription",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "String",
+                "kind": "SCALAR"
+              },
+              "name": "neighborhoodSlug",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "String",
+                "kind": "SCALAR"
+              },
+              "name": "postalCode",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "String",
+                "kind": "SCALAR"
+              },
+              "name": "state",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "String",
+                "kind": "SCALAR"
+              },
+              "name": "stateSlug",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "String",
+                "kind": "SCALAR"
+              },
+              "name": "street",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "String",
+                "kind": "SCALAR"
+              },
+              "name": "streetNumber",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "String",
+                "kind": "SCALAR"
+              },
+              "name": "streetSlug",
               "isDeprecated": false,
               "description": null,
               "deprecationReason": null,
@@ -4266,85 +5577,6 @@
           ],
           "enumValues": null,
           "description": null
-        },
-        {
-          "possibleTypes": null,
-          "name": "__Schema",
-          "kind": "OBJECT",
-          "interfaces": [],
-          "inputFields": null,
-          "fields": [
-            {
-              "type": {
-                "ofType": {
-                  "ofType": null,
-                  "name": "__Directive",
-                  "kind": "OBJECT"
-                },
-                "name": null,
-                "kind": "LIST"
-              },
-              "name": "directives",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "__Type",
-                "kind": "OBJECT"
-              },
-              "name": "mutationType",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "__Type",
-                "kind": "OBJECT"
-              },
-              "name": "queryType",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "__Type",
-                "kind": "OBJECT"
-              },
-              "name": "subscriptionType",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": {
-                  "ofType": null,
-                  "name": "__Type",
-                  "kind": "OBJECT"
-                },
-                "name": null,
-                "kind": "LIST"
-              },
-              "name": "types",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            }
-          ],
-          "enumValues": null,
-          "description": "Represents a schema"
         },
         {
           "possibleTypes": null,
@@ -4509,6 +5741,290 @@
         },
         {
           "possibleTypes": null,
+          "name": "__Field",
+          "kind": "OBJECT",
+          "interfaces": [],
+          "inputFields": null,
+          "fields": [
+            {
+              "type": {
+                "ofType": {
+                  "ofType": null,
+                  "name": "__InputValue",
+                  "kind": "OBJECT"
+                },
+                "name": null,
+                "kind": "LIST"
+              },
+              "name": "args",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "String",
+                "kind": "SCALAR"
+              },
+              "name": "deprecationReason",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "String",
+                "kind": "SCALAR"
+              },
+              "name": "description",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Boolean",
+                "kind": "SCALAR"
+              },
+              "name": "isDeprecated",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "String",
+                "kind": "SCALAR"
+              },
+              "name": "name",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "__Type",
+                "kind": "OBJECT"
+              },
+              "name": "type",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            }
+          ],
+          "enumValues": null,
+          "description": null
+        },
+        {
+          "possibleTypes": null,
+          "name": "__InputValue",
+          "kind": "OBJECT",
+          "interfaces": [],
+          "inputFields": null,
+          "fields": [
+            {
+              "type": {
+                "ofType": null,
+                "name": "String",
+                "kind": "SCALAR"
+              },
+              "name": "defaultValue",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "String",
+                "kind": "SCALAR"
+              },
+              "name": "description",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "String",
+                "kind": "SCALAR"
+              },
+              "name": "name",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "__Type",
+                "kind": "OBJECT"
+              },
+              "name": "type",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            }
+          ],
+          "enumValues": null,
+          "description": null
+        },
+        {
+          "possibleTypes": null,
+          "name": "__Schema",
+          "kind": "OBJECT",
+          "interfaces": [],
+          "inputFields": null,
+          "fields": [
+            {
+              "type": {
+                "ofType": {
+                  "ofType": null,
+                  "name": "__Directive",
+                  "kind": "OBJECT"
+                },
+                "name": null,
+                "kind": "LIST"
+              },
+              "name": "directives",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "__Type",
+                "kind": "OBJECT"
+              },
+              "name": "mutationType",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "__Type",
+                "kind": "OBJECT"
+              },
+              "name": "queryType",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "__Type",
+                "kind": "OBJECT"
+              },
+              "name": "subscriptionType",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": {
+                  "ofType": null,
+                  "name": "__Type",
+                  "kind": "OBJECT"
+                },
+                "name": null,
+                "kind": "LIST"
+              },
+              "name": "types",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            }
+          ],
+          "enumValues": null,
+          "description": "Represents a schema"
+        },
+        {
+          "possibleTypes": null,
+          "name": "__EnumValue",
+          "kind": "OBJECT",
+          "interfaces": [],
+          "inputFields": null,
+          "fields": [
+            {
+              "type": {
+                "ofType": null,
+                "name": "String",
+                "kind": "SCALAR"
+              },
+              "name": "deprecationReason",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "String",
+                "kind": "SCALAR"
+              },
+              "name": "description",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "Boolean",
+                "kind": "SCALAR"
+              },
+              "name": "isDeprecated",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            },
+            {
+              "type": {
+                "ofType": null,
+                "name": "String",
+                "kind": "SCALAR"
+              },
+              "name": "name",
+              "isDeprecated": false,
+              "description": null,
+              "deprecationReason": null,
+              "args": []
+            }
+          ],
+          "enumValues": null,
+          "description": null
+        },
+        {
+          "possibleTypes": null,
           "name": "__DirectiveLocation",
           "kind": "ENUM",
           "interfaces": null,
@@ -4662,211 +6178,6 @@
           ],
           "enumValues": null,
           "description": "Represents a directive"
-        },
-        {
-          "possibleTypes": null,
-          "name": "__InputValue",
-          "kind": "OBJECT",
-          "interfaces": [],
-          "inputFields": null,
-          "fields": [
-            {
-              "type": {
-                "ofType": null,
-                "name": "String",
-                "kind": "SCALAR"
-              },
-              "name": "defaultValue",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "String",
-                "kind": "SCALAR"
-              },
-              "name": "description",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "String",
-                "kind": "SCALAR"
-              },
-              "name": "name",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "__Type",
-                "kind": "OBJECT"
-              },
-              "name": "type",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            }
-          ],
-          "enumValues": null,
-          "description": null
-        },
-        {
-          "possibleTypes": null,
-          "name": "__EnumValue",
-          "kind": "OBJECT",
-          "interfaces": [],
-          "inputFields": null,
-          "fields": [
-            {
-              "type": {
-                "ofType": null,
-                "name": "String",
-                "kind": "SCALAR"
-              },
-              "name": "deprecationReason",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "String",
-                "kind": "SCALAR"
-              },
-              "name": "description",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Boolean",
-                "kind": "SCALAR"
-              },
-              "name": "isDeprecated",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "String",
-                "kind": "SCALAR"
-              },
-              "name": "name",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            }
-          ],
-          "enumValues": null,
-          "description": null
-        },
-        {
-          "possibleTypes": null,
-          "name": "__Field",
-          "kind": "OBJECT",
-          "interfaces": [],
-          "inputFields": null,
-          "fields": [
-            {
-              "type": {
-                "ofType": {
-                  "ofType": null,
-                  "name": "__InputValue",
-                  "kind": "OBJECT"
-                },
-                "name": null,
-                "kind": "LIST"
-              },
-              "name": "args",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "String",
-                "kind": "SCALAR"
-              },
-              "name": "deprecationReason",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "String",
-                "kind": "SCALAR"
-              },
-              "name": "description",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "Boolean",
-                "kind": "SCALAR"
-              },
-              "name": "isDeprecated",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "String",
-                "kind": "SCALAR"
-              },
-              "name": "name",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            },
-            {
-              "type": {
-                "ofType": null,
-                "name": "__Type",
-                "kind": "OBJECT"
-              },
-              "name": "type",
-              "isDeprecated": false,
-              "description": null,
-              "deprecationReason": null,
-              "args": []
-            }
-          ],
-          "enumValues": null,
-          "description": null
         }
       ],
       "subscriptionType": {
@@ -4882,9 +6193,9 @@
         {
           "name": "include",
           "locations": [
-            "INLINE_FRAGMENT",
+            "FIELD",
             "FRAGMENT_SPREAD",
-            "FIELD"
+            "INLINE_FRAGMENT"
           ],
           "description": "Directs the executor to include this field or fragment only when the `if` argument is true.\"",
           "args": [
@@ -4907,9 +6218,9 @@
         {
           "name": "skip",
           "locations": [
-            "INLINE_FRAGMENT",
+            "FIELD",
             "FRAGMENT_SPREAD",
-            "FIELD"
+            "INLINE_FRAGMENT"
           ],
           "description": "Directs the executor to skip this field or fragment when the `if` argument is true.",
           "args": [
