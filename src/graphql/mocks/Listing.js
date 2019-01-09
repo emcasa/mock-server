@@ -23,7 +23,7 @@ export default withSeed(
     type: () => faker.random.arrayElement(["Casa", "Apartamento", "Cobertura"]),
     price: () => faker.random.number({ min: 500, max: 3000 }) * 1000,
     matterportCode: () => faker.random.arrayElement(matterportCode),
-    images: () => new MockList([2, 12]),
+    images: () => new MockList([5, 12]),
     area: () => faker.random.number({ min: 50, max: 300 }),
     rooms: faker.random.number({ min: 1, max: 10 }),
     bathrooms: faker.random.number({ min: 1, max: 10 }),
