@@ -13,9 +13,11 @@ export default {
   ListingIndex,
   User,
   District,
+  UUID: () => String(faker.random.uuid()),
   ID: () => String(faker.random.number()),
   String: () => "",
   Int: () => faker.random.number({ min: 1, max: 1000 }),
   Float: () => faker.random.number({ min: 1, max: 1000 }).toFixed(2),
-  Boolean: () => faker.random.boolean()
+  Boolean: () => faker.random.boolean(),
+  NaiveDateTime: () => new Date().toISOString()
 };
