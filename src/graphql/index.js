@@ -1,25 +1,30 @@
 import { ApolloServer } from "apollo-server-express";
 import { buildClientSchema, printSchema } from "graphql";
 import { addMockFunctionsToSchema, makeExecutableSchema } from "graphql-tools";
+import merge from 'merge-deep'
 
 import * as introspectionResult from "../../schema.json";
 import { decodeJwt } from "../helpers/jwt.js";
 import resolvers from "./resolvers";
 import mocks from "./mocks";
 
-export function createSchema() {
+export function createSchema(options = {}) {
   // Make a GraphQL schema with no resolvers
   const introspectionSchema = buildClientSchema(introspectionResult.data);
   const typeDefs = printSchema(introspectionSchema);
   const schema = makeExecutableSchema({
     typeDefs,
-    resolvers,
+    resolvers: merge(resolvers, options.resolvers || {}),
     resolverValidationOptions: {
       requireResolversForResolveType: false
     }
   });
   // Add mocks, modifies schema in place
-  addMockFunctionsToSchema({ schema, mocks, preserveResolvers: true });
+  addMockFunctionsToSchema({
+    schema,
+    mocks: merge(mocks, options.mocks || {}),
+    preserveResolvers: true
+  });
   return schema;
 }
 
@@ -29,8 +34,8 @@ function parseJwt(header) {
   return token ? decodeJwt(token) : undefined;
 }
 
-export default async function createApolloServer() {
-  const schema = createSchema();
+export default async function createApolloServer(options) {
+  const schema = createSchema(options);
   return new ApolloServer({
     schema,
     context: async ({ req }) => ({
