@@ -18,6 +18,7 @@ export default {
   String: () => "",
   Int: () => faker.random.number({ min: 1, max: 1000 }),
   Float: () => faker.random.number({ min: 1, max: 1000 }).toFixed(2),
+  Decimal: () => faker.finance.amount(0, 1000, 6),
   Boolean: () => faker.random.boolean(),
   NaiveDateTime: () => new Date().toISOString()
 };
