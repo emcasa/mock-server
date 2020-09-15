@@ -19,6 +19,3 @@ export default async function configure([arg0]) {
   console.log(`with backend repository at:\n  ${backendPath}`)
   child_process.exec(`rm ./backend; ln -s ${backendPath} ./backend; yarn update-schema`, {cwd})
 }
-
-// updateSchema(cwd)
-
