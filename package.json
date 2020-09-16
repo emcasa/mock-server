@@ -5,14 +5,14 @@
   "license": "MIT",
   "main": "lib/index.js",
   "bin": {
-    "emcasa-mock-server": "lib/bin/run.js"
+    "emcasa-mock-server": "lib/bin/emcasa-mock-server.js"
   },
   "scripts": {
     "start": "nodemon src/bin/run.js",
     "build": "babel -d lib src",
-    "update-schema": "cd backend && mix absinthe.schema.json --schema ReWeb.Schema --pretty && mv schema.json ../schema.json",
-    "prepare-backend": "git submodule init && (cd backend && cp -n config/dev.secret-example.exs config/dev.secret.exs || mix deps.get)",
-    "prepare": "yarn prepare-backend && yarn build"
+    "update-schema": "(cd backend && mix absinthe.schema.json --schema ReWeb.Schema --pretty) && mv backend/schema.json ./schema.json",
+    "prepare-backend": "cd backend && cp -n config/dev.secret-example.exs config/dev.secret.exs || mix deps.get",
+    "prepare": "yarn build"
   },
   "dependencies": {
     "apollo-errors": "^1.9.0",

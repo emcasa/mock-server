@@ -11,7 +11,7 @@ const app = express();
 
 const listen = promisify((port, fun) => app.listen(port, fun));
 
-async function start() {
+export default async function run() {
   app.use((req, res, next) => {
     console.log(`[${req.method}] ${req.path}`);
     next();
@@ -33,8 +33,3 @@ async function start() {
   console.log(`Mock server is listening on port ${PORT}`);
   console.log(`Apollo server mounted at http://localhost:${PORT}/graphql_api`);
 }
-
-start().catch(error => {
-  console.error(error);
-  process.exit(1);
-});
