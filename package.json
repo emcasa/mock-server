@@ -27,7 +27,7 @@
     "graphql-tools": "5",
     "lodash.flow": "^3.5.0",
     "lodash.mapvalues": "^4.6.0",
-    "merge-deep": "^3.0.2",
+    "merge-deep": "^3.0.3",
     "os": "^0.1.1",
     "path": "^0.12.7",
     "slugify": "^1.4.0",
